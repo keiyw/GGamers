@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+  --Azul-escuro: #03012c;
+  --verde: #0086a4;
+  --branco-suave: #f7f3f3;
+  --preto: #0a0a0a;
+}
+/* Reset CSS */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.container-grid {
+  max-width: 80vw;
+  width: 1400px;
+  margin: 0 auto;
+}
+/* margin: 20px - Espaçamento esterno de 20px */
+/* margin: 20px 10px - espaçamento 20px na vertical, 10px na horizontal */
+/* margin: 20px 10px 5px - espaçamento 20px para cima, 10px na horizontal, 5px para baixo */
+/* margin: 20px 10px 5px 2PX - espaçamento 20px para cima, 10px Ppara a direita, 5px para baixo, 2px para esquerda */
+
+.banner {
+  height: 100vh;
+  background-position: 165% 40%;
+}
+
+.search-container {
+  display: flex;
+  width: 300px;
+  margin: 20px auto;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
