@@ -3,6 +3,12 @@
   src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+* {
+  margin: 0 auto; /*configuracao do site*/
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
 :root {
   --Azul-escuro: #03012c;
   --verde: #0086a4;
@@ -11,17 +17,69 @@
 }
 /* Reset CSS */
 
-
+.menu a {
+  text-decoration: none;
+  color: var(--branco-suave);
+  font-size: 1.2em;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+.imagem-central {
+  width: 40vw;
+}
+.secao-gamer {
+  padding: 40px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+.secao-gamer p {
+  max-width: 300vw;
+  
+}
+.secao-gamer:nth-child(2){
+  font-size: 1.5em;
+ 
+}
+.pgamer{
+  font-size: 2em;
+  text-align: center;
+  width: 25vw;
+  color: var(--Azul-escuro);
+  font-weight: 700;
+}
+.pgamer span {
+  color: var(--verde);
+}
+.centro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 html {
   scroll-behavior: smooth;
 }
-
-
 .container-grid {
+  /*configuracao do menu*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--Azul-escuro);
+  padding: 20px 0 20px 0;
+}
+
+/* .container-grid {
   max-width: 80vw;
   width: 1400px;
   margin: 0 auto;
-}
+} */
 /* margin: 20px - Espaçamento esterno de 20px */
 /* margin: 20px 10px - espaçamento 20px na vertical, 10px na horizontal */
 /* margin: 20px 10px 5px - espaçamento 20px para cima, 10px na horizontal, 5px para baixo */
