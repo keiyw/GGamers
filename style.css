@@ -17,6 +17,11 @@
 }
 /* Reset CSS */
 
+.banner {
+  height: 100vh;
+  background-position: 165% 40%;
+}
+
 .menu a {
   text-decoration: none;
   color: var(--branco-suave);
@@ -32,20 +37,89 @@
   width: 40vw;
 }
 .secao-gamer {
+  gap: 25px;
+  height: 100%;
   padding: 40px;
   justify-content: space-around;
   display: flex;
   flex-direction: column;
 }
-.secao-gamer p {
-  max-width: 300vw;
+.secao-gamer:nth-child(2) {
+  font-size: 1.5em;
+}
+
+.segunda-imagem {
+  width: 30vw;
+  height: 90vh;
+
+  position: relative;
+  position: absolute;
+  top: 30;
+  right: 0;
+}
+.paragrafo {
+  text-align: center;
+  margin-top: 20px; /* Espaço acima do parágrafo */
+  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+  color: var(--Azul-escuro); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  max-width: 40vw;
+}
+.p-segundo {
+  text-align:center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--Azul-escuro);
+  font-size: 20px;
+  font-family: "Montserrat";
+  max-width: 50vw;
   
 }
-.secao-gamer:nth-child(2){
-  font-size: 1.5em;
- 
+
+.s-paragrafo {
+
+  text-align:center;
+  margin-top: 60px; /* Espaço acima do parágrafo */
+  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+  color: var(--Azul-escuro); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  max-width: 40vw;
 }
-.pgamer{
+.search-container {
+  display: flex;
+  width: 300px;
+  margin: 20px auto;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#searchInput {
+  width: 200px; /* largura */
+  height: 30px; /* altura */
+  padding: 5px; /* preenchimento */
+  border: 1px solid var(--verde); /* borda */
+  border-radius: 5px; /* raio da borda */
+  font-size: 15px; /* tamanho da fonte */
+}
+#searchInput {
+  transition: color 0.8s ease-in-out, transform 0.8s ease-in-out,
+    background-color 0.8s ease-in-out;
+}
+#searchInput:hover {
+  color: var(--verde);
+  transform: scale(1.1);
+  background-color: var(--branco-suave);
+}
+
+.pgamer {
   font-size: 2em;
   text-align: center;
   width: 25vw;
@@ -55,12 +129,74 @@
 .pgamer span {
   color: var(--verde);
 }
+.paragrafo span {
+  color: var(--verde);
+}
+
 .centro {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+
+.btn-blue {
+  width: 130px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid var(--verde);
+  background-color: var(--verde);
+  color: var(--branco-suave);
+
+  justify-content: flex-end;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.btn-white {
+  width: 130px;
+  cursor: pointer;
+  padding: 15px;
+  border: 2px solid var(--verde);
+  background-color: var(--branco-suave);
+  color: var(--verde);
+  border-radius: 10px;
+}
+.btn-white:hover {
+  border-color: var(--verde);
+  color: var(--verde);
+  transform: scale(1.1);
+  background-color: var(--branco-suave);
+}
+.btn-blue {
+  transition: color 0.8s ease-in-out, transform 0.8s ease-in-out,
+    background-color 0.8s ease-in-out;
+}
+
+.btn-blue:hover {
+  border-color: var(--verde);
+  color: var(--branco-suave);
+  transform: scale(1.1);
+  background-color: var(--verde);
+}
+
+.btn-white {
+  transition: color 0.8s ease-in-out, transform 0.8s ease-in-out,
+    background-color 0.8s ease-in-out;
+}
+
+.btn-white:hover {
+  border-color: var(--verde);
+  color: var(--verde);
+  transform: scale(1.1);
+  background-color: var(--branco-suave);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -84,22 +220,3 @@ html {
 /* margin: 20px 10px - espaçamento 20px na vertical, 10px na horizontal */
 /* margin: 20px 10px 5px - espaçamento 20px para cima, 10px na horizontal, 5px para baixo */
 /* margin: 20px 10px 5px 2PX - espaçamento 20px para cima, 10px Ppara a direita, 5px para baixo, 2px para esquerda */
-
-.banner {
-  height: 100vh;
-  background-position: 165% 40%;
-}
-
-.search-container {
-  display: flex;
-  width: 300px;
-  margin: 20px auto;
-}
-
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-}
