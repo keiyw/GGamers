@@ -4,11 +4,14 @@
 }
 
 * {
-  margin: 0 auto;
-  /*configuracao do site*/
+  margin: 0 auto; /*configuracao do site*/
   box-sizing: border-box;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: var(--preto);
+  color: var(
+    --branco-suave
+  ); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
 }
 
 :root {
@@ -50,76 +53,97 @@
   display: flex;
   flex-direction: column;
 }
+.paragrafo {
+  text-align: center;
+  margin-top: 20px; /* Espaço acima do parágrafo */
+  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+  color: var(--branco-suave);/* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  max-width: 40vw;
+}
 
 .secao-gamer:nth-child(2) {
   font-size: 1.5em;
 }
 
 .segunda-imagem {
-
   display: flex;
   position: absolute;
   justify-content: flex-end;
-  flex-direction: row-reverse;
   right: 0;
 }
+.segunda-imagem{
+  float: left;
+  width: 40%;
+  padding: 0px;
+  margin: 35px 20px 30px 2PX; /* espaçamento 35px para cima, 20px para a direita, 30px para baixo, 2px para esquerda */
+ }
 
-.s-paragrafo {
-
-  padding: 90px;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-content: space-around;
-}
-
-
-.paragrafo {
+ .p-segundo{
   text-align: center;
-  margin-top: 20px;
-  /* Espaço acima do parágrafo */
-  margin-bottom: 20px;
-  /* Espaço abaixo do parágrafo */
-  color: var(--Azul-escuro);
-  /* Cor do texto */
-  font-size: 20px;
-  /* Tamanho da fonte */
-  font-family: "Montserrat";
-  /* Família da fonte */
+  margin-top: 20px; /* Espaço acima do parágrafo */
+  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+  color: var(--branco-suave); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
   max-width: 40vw;
+  margin: 50px 30px 30px 165PX;
+ }
 
+.s-banner {
+  display: flex; /* Utiliza flexbox para alinhar os itens */
+  justify-content: space-between; /* Distribui os itens igualmente dentro do contêiner */
+  align-items: center; /* Alinha os itens verticalmente */
+  flex-direction: column;
+  max-width: 165px;
+  
 }
 
 .s-paragrafo span {
   color: var(--verde);
 }
 
-.p-segundo {
-
-
-  text-align: center;
-  color: var(--Azul-escuro);
-  font-size: 20px;
-  font-family: "Montserrat";
-  max-width: 40vw;
-}
-
-.p-segundo,
-.s-paragrafo {
-  margin: 50px 50px 50px 50px;
-}
-
-.s-paragrafo {
-  font-family: "Montserrat";
-  max-width: 60vw;
-  width: 70vw;
-}
-
 .s-paragrafo {
   font-size: 1.7em;
   text-align: center;
-  width: 70vw;
-  color: var(--Azul-escuro);
+  color: var(--branco-suave); /* Cor do texto */
+
+  margin-top: 10px; /* Espaço acima do parágrafo */
+  margin-bottom: 10px; /* Espaço abaixo do parágrafo */
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
   font-weight: 700;
+  max-width: 40vw;
+  margin: 100px;
+  margin: 250px 30px 30px 165PX;
+  
+}
+.secao-jogos {
+  margin: 50px 30px 30px 165PX;
+}
+.titulo-jogos span {
+  color: var(--verde);
+}
+
+.titulo-jogos{
+ 
+  text-align: center;
+  color: var(--branco-suave); /* Cor do texto */
+
+ 
+ 
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  font-weight: 700;
+  max-width: 30vw;
+  margin: 100px;
+  margin: 400px 30px 30px 165PX;
+
+}
+.centro-J {
+  display: flex;
+  flex-direction: column;
 }
 
 .search-container {
@@ -137,18 +161,12 @@ input[type="text"] {
 }
 
 #searchInput {
-  width: 200px;
-  /* largura */
-  height: 30px;
-  /* altura */
-  padding: 5px;
-  /* preenchimento */
-  border: 1px solid var(--verde);
-  /* borda */
-  border-radius: 5px;
-  /* raio da borda */
-  font-size: 15px;
-  /* tamanho da fonte */
+  width: 200px; /* largura */
+  height: 30px; /* altura */
+  padding: 5px; /* preenchimento */
+  border: 1px solid var(--verde); /* borda */
+  border-radius: 5px; /* raio da borda */
+  font-size: 15px; /* tamanho da fonte */
 }
 
 #searchInput {
@@ -166,7 +184,7 @@ input[type="text"] {
   font-size: 2em;
   text-align: center;
   width: 30vw;
-  color: var(--Azul-escuro);
+  color: var(--branco-suave);
   font-weight: 700;
 }
 
@@ -227,7 +245,7 @@ input[type="text"] {
 
 .btn-blue:hover {
   border-color: var(--verde);
-  color: var(--branco-suave);
+  color: var(--Azul-escuro);
   transform: scale(1.1);
   background-color: var(--verde);
 }
@@ -255,8 +273,8 @@ html {
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--Azul-escuro);
-  padding: 20px 0 20px 0;
+  background-color: var(--preto);
+  padding: 30px 0 30px 0;
 }
 
 /* .container-grid {
