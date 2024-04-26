@@ -8,10 +8,7 @@
   box-sizing: border-box;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--preto);
-  color: var(
-    --branco-suave
-  ); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
+  
 }
 
 :root {
@@ -19,6 +16,13 @@
   --verde: #0086a4;
   --branco-suave: #f7f3f3;
   --preto: #0a0a0a;
+}
+
+body {
+  background-color: var(--preto);
+  color: var(
+    --branco-suave
+  ); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
 }
 
 /* Reset CSS */
@@ -74,7 +78,6 @@
   right: 0;
 }
 .segunda-imagem{
-  float: left;
   width: 40%;
   padding: 0px;
   margin: 35px 20px 30px 2PX; /* espaçamento 35px para cima, 20px para a direita, 30px para baixo, 2px para esquerda */
@@ -266,8 +269,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.container-grid {
-  /*configuracao do menu*/
+.container-grid {  /*configuracao do menu*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -276,6 +278,42 @@ html {
   background-color: var(--preto);
   padding: 30px 0 30px 0;
 }
+
+.chat-boot {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.basquete {
+  
+ 
+  flex-direction: left;
+  justify-content: flex-start;
+  
+  margin: 100px 10px 20px 65PX;
+  
+}
+.fifa{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+ 
+  flex-direction: column-reverse;
+}
+.carro {
+  
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+.xadrex {
+  width: 1580px;
+ 
+  
+}
+
 
 /* .container-grid {
   max-width: 80vw;
