@@ -27,10 +27,7 @@ body {
 
 /* Reset CSS */
 
-.banner {
-  height: 100vh;
-  background-position: 165% 40%;
-}
+
 
 .menu a {
   text-decoration: none;
@@ -78,9 +75,9 @@ body {
   right: 0;
 }
 .segunda-imagem{
-  width: 40%;
-  padding: 0px;
-  margin: 35px 20px 30px 2PX; /* espaçamento 35px para cima, 20px para a direita, 30px para baixo, 2px para esquerda */
+  width: 900px;
+  padding: 50px;
+  margin: 25px 20px 50px 10PX; /* espaçamento 35px para cima, 20px para a direita, 30px para baixo, 2px para esquerda */
  }
 
  .p-segundo{
@@ -91,7 +88,7 @@ body {
   font-size: 20px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   max-width: 40vw;
-  margin: 50px 30px 30px 165PX;
+  margin: 50px 25px 30px 165PX;
  }
 
 .s-banner {
@@ -118,8 +115,8 @@ body {
   font-family: "Montserrat"; /* Família da fonte */
   font-weight: 700;
   max-width: 40vw;
-  margin: 100px;
-  margin: 250px 30px 30px 165PX;
+ 
+  margin: 350px 30px 30px 165PX;
   
 }
 .secao-jogos {
@@ -265,9 +262,6 @@ input[type="text"] {
   background-color: white;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 .container-grid {  /*configuracao do menu*/
   display: flex;
@@ -286,24 +280,25 @@ html {
 }
 
 .basquete {
-  
- 
-  flex-direction: left;
-  justify-content: flex-start;
-  
-  margin: 100px 10px 20px 65PX;
+  width: 447px;
+  justify-content: left;
+  position: absolute;
+ margin: 0 auto;
+    left: 0;
+    top: 1995px; /* ajuste a distância do topo conforme necessário */
+    
   
 }
 .fifa{
+  width: 649px;
+  justify-items: center;
   align-items: center;
-  display: flex;
   justify-content: center;
-  
- 
-  flex-direction: column-reverse;
+  margin: 0 auto;
+
 }
 .carro {
-  
+  width: 438px;
   flex-direction: row;
   justify-content: flex-end;
 
