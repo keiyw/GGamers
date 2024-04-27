@@ -8,7 +8,6 @@
   box-sizing: border-box;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  
 }
 
 :root {
@@ -26,8 +25,6 @@ body {
 }
 
 /* Reset CSS */
-
-
 
 .menu a {
   text-decoration: none;
@@ -48,7 +45,6 @@ body {
 
 .secao-gamer {
   gap: 25px;
-  height: 100%;
   padding: 40px;
   justify-content: space-around;
   display: flex;
@@ -58,7 +54,7 @@ body {
   text-align: center;
   margin-top: 20px; /* Espaço acima do parágrafo */
   margin-bottom: 20px; /* Espaço abaixo do parágrafo */
-  color: var(--branco-suave);/* Cor do texto */
+  color: var(--branco-suave); /* Cor do texto */
   font-size: 20px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   max-width: 40vw;
@@ -69,18 +65,11 @@ body {
 }
 
 .segunda-imagem {
-  display: flex;
-  position: absolute;
-  justify-content: flex-end;
-  right: 0;
-}
-.segunda-imagem{
-  width: 900px;
-  padding: 50px;
-  margin: 25px 20px 50px 10PX; /* espaçamento 35px para cima, 20px para a direita, 30px para baixo, 2px para esquerda */
- }
+   width: 900px;
 
- .p-segundo{
+}
+
+.p-segundo {
   text-align: center;
   margin-top: 20px; /* Espaço acima do parágrafo */
   margin-bottom: 30px; /* Espaço abaixo do parágrafo */
@@ -88,18 +77,8 @@ body {
   font-size: 20px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   max-width: 40vw;
-  margin: 50px 25px 30px 165PX;
- }
-
-.s-banner {
-  display: flex; /* Utiliza flexbox para alinhar os itens */
-  justify-content: space-between; /* Distribui os itens igualmente dentro do contêiner */
-  align-items: center; /* Alinha os itens verticalmente */
-  flex-direction: column;
-  max-width: 165px;
   
 }
-
 .s-paragrafo span {
   color: var(--verde);
 }
@@ -109,41 +88,53 @@ body {
   text-align: center;
   color: var(--branco-suave); /* Cor do texto */
 
-  margin-top: 10px; /* Espaço acima do parágrafo */
+  margin-top: 10px; /* Espaço acima do parágrafo */ 
   margin-bottom: 10px; /* Espaço abaixo do parágrafo */
   font-size: 20px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   font-weight: 700;
   max-width: 40vw;
- 
-  margin: 350px 30px 30px 165PX;
-  
-}
-.secao-jogos {
-  margin: 50px 30px 30px 165PX;
 }
 .titulo-jogos span {
   color: var(--verde);
 }
 
-.titulo-jogos{
- 
+.titulo-jogos {
   text-align: center;
   color: var(--branco-suave); /* Cor do texto */
 
- 
- 
   font-size: 20px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   font-weight: 700;
   max-width: 30vw;
-  margin: 100px;
-  margin: 400px 30px 30px 165PX;
-
+  /* margin: 100px; */
+  /* margin: 400px 30px 30px 165px; */
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  
 }
 .centro-J {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.centro2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+
+.s-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-container {
@@ -262,8 +253,8 @@ input[type="text"] {
   background-color: white;
 }
 
-
-.container-grid {  /*configuracao do menu*/
+.container-grid {
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -281,41 +272,49 @@ input[type="text"] {
 
 .basquete {
   width: 447px;
-  justify-content: left;
-  position: absolute;
- margin: 0 auto;
-    left: 0;
-    top: 1995px; /* ajuste a distância do topo conforme necessário */
-    
-  
 }
-.fifa{
+.fifa {
   width: 649px;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-
 }
 .carro {
   width: 438px;
-  flex-direction: row;
-  justify-content: flex-end;
-
 }
 .xadrex {
   width: 1580px;
- 
-  
 }
 
+.img1 {
+  
+  grid-area: basquete;
+}
+.img2 {
+  grid-area: fifa;
+}
+.img3 {
+  grid-area: carro;
+}
+.img4 {
+  grid-area: xadrez;
+}
 
-/* .container-grid {
-  max-width: 80vw;
-  width: 1400px;
-  margin: 0 auto;
-} */
-/* margin: 20px - Espaçamento esterno de 20px */
-/* margin: 20px 10px - espaçamento 20px na vertical, 10px na horizontal */
-/* margin: 20px 10px 5px - espaçamento 20px para cima, 10px na horizontal, 5px para baixo */
-/* margin: 20px 10px 5px 2PX - espaçamento 20px para cima, 10px Ppara a direita, 5px para baixo, 2px para esquerda */
+.secao-jogos {
+
+  .img1 {
+    grid-area: basquete;
+  }
+  .img2 {
+    grid-area: fifa;
+  }
+  .img3 {
+    grid-area: carro;
+  }
+  .img4 {
+   
+    grid-area: xadrez;
+  }
+}
+.secao-jogos {
+  
+  align-items: center;
+  justify-items: center; /* Alinha os itens horizontalmente no centro */
+}
