@@ -107,6 +107,7 @@ body {
   font-family: "Montserrat"; /* Família da fonte */
   font-weight: 700;
   max-width: 30vw;
+  margin-bottom: 150px;
   /* margin: 100px; */
   /* margin: 400px 30px 30px 165px; */
 }
@@ -275,12 +276,13 @@ input[type="text"] {
 }
 .fifa {
   width: 649px;
+  margin: 0px 30px 0px 30px;
 }
 .carro {
   width: 438px;
 }
-.xadrex {
-  width: 1580px;
+.xadrez {
+  width: 100%;
 }
 
 .img1 {
@@ -298,23 +300,24 @@ input[type="text"] {
 }
 
 .secao-jogos {
-
-  .img1 {
-    grid-area: basquete;
-  }
-  .img2 {
-    grid-area: fifa;
-  }
-  .img3 {
-    grid-area: carro;
-  }
-  .img4 {
-   
-    grid-area: xadrez;
-  }
-}
-.secao-jogos {
-  
+  height: 420px;
+  width: 100%;
   align-items: center;
-  justify-items: center; /* Alinha os itens horizontalmente no centro */
+  justify-items: center;
+  margin-bottom: 45px;
+}
+
+.secao-jogos>img{
+  border-radius: 10px;
+}
+
+.container-xadrez{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.chat-bot{
+  position: fixed;
+  margin-left: 50px;
+  margin-top: 80%;
 }
