@@ -65,8 +65,7 @@ body {
 }
 
 .segunda-imagem {
-   width: 700px;
-
+  width: 700px;
 }
 
 .p-segundo {
@@ -77,7 +76,6 @@ body {
   font-size: 20px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   max-width: 40vw;
-  
 }
 .s-paragrafo span {
   color: var(--verde);
@@ -88,7 +86,7 @@ body {
   text-align: center;
   color: var(--branco-suave); /* Cor do texto */
 
-  margin-top: 10px; /* Espaço acima do parágrafo */ 
+  margin-top: 10px; /* Espaço acima do parágrafo */
   margin-bottom: 10px; /* Espaço abaixo do parágrafo */
   font-size: 20px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
@@ -116,7 +114,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
-  
 }
 .centro-J {
   display: flex;
@@ -129,7 +126,6 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-
 
 .s-banner {
   display: flex;
@@ -255,7 +251,6 @@ input[type="text"] {
 }
 
 .container-grid {
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -282,52 +277,62 @@ input[type="text"] {
   width: 340px;
 }
 .xadrez {
-  width: 100%;
+  width: 1250px;
 }
 
 .img1 {
-  
   grid-area: basquete;
+  transition: transform 0.8s ease-in-out;
+  cursor: pointer;
+   
 }
 .img2 {
   grid-area: fifa;
+  transition: transform 0.8s ease-in-out;
+  cursor: pointer;
+   
 }
 .img3 {
   grid-area: carro;
- 
-
+  transition: transform 0.8s ease-in-out;
+  cursor: pointer;
+   
 }
 .img4 {
   grid-area: xadrez;
+  transition: transform 0.8s ease-in-out;
+  cursor: pointer;
+   
 }
 
 .secao-jogos {
-  height: 350px;
+  grid-template-areas:
+    "basquete basquete fifa fifa carro carro"
+    "xadrez xadrez xadrez xadrez xadrez xadrez";
+
+  display: grid;
   justify-items: center;
-  
+  align-content: center;
 }
 
-.secao-jogos>img{
+.secao-jogos img {
   border-radius: 10px;
-  
 }
 
-.container-xadrez{
-  width: 82%;
+/* .container-xadrez{
+  width: 79%;
   margin-bottom: 95px;
-}
+} */
 
-.chat-bot{
+.chat-bot {
   position: fixed;
   margin-left: 30px;
   margin-top: 70%;
 }
 
-.container-xadrez p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
+.img1:hover, .img2:hover, .img3:hover, .img4:hover {
 
-
+  /* min-width: 500px; */
+  transform: scale(1.1);
 }
+
