@@ -323,8 +323,11 @@ input[type="text"] {
   margin-top: 70%;
 }
 
-.container-xadrez {
-  z-index: -1;
-  flex-direction: center;
+.container-xadrez p {
+  display: flex;
   justify-content: center;
+  align-items: center;
+ 
+
+
 }
