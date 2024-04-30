@@ -271,13 +271,14 @@ input[type="text"] {
 }
 .fifa {
   width: 500px;
-  margin: 0px 20px 0px 20px;
+  
 }
 .carro {
   width: 340px;
 }
 .xadrez {
   width: 1250px;
+  margin: 20px 20px 20px 20px;
 }
 
 .img1 {
@@ -331,8 +332,7 @@ input[type="text"] {
 }
 
 .img1:hover, .img2:hover, .img3:hover, .img4:hover {
-
-  /* min-width: 500px; */
   transform: scale(1.1);
 }
+
 
