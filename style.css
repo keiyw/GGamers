@@ -15,10 +15,11 @@
   --verde: #0086a4;
   --branco-suave: #f7f3f3;
   --preto: #0a0a0a;
+  --verde-escuro: #000F08;
 }
 
 body {
-  background-color: var(--preto);
+  background-color: #000F08;
   color: var(
     --branco-suave
   ); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
@@ -256,7 +257,7 @@ input[type="text"] {
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--preto);
+  background-color: #000F08;
   padding: 30px 0 30px 0;
 }
 
@@ -335,4 +336,56 @@ input[type="text"] {
   transform: scale(1.1);
 }
 
+.titulo-C {
+  text-align: center;
+  color: var(--branco-suave); /* Cor do texto */
 
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  font-weight: 700;
+  max-width: 30vw;
+  margin-bottom: 100px;
+  /* margin: 100px; */
+  /* margin: 400px 30px 30px 165px; */
+}
+.titulo-C span {
+  color: var(--verde);
+}
+
+.imagens-carousel {
+  display: flex;
+  justify-items: center;
+  align-content: center;
+ 
+}
+.texto-sobre {
+  text-align: center;
+  color: var(--branco-suave); /* Cor do texto */
+
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  font-weight: 700;
+  max-width: 30vw;
+  margin-bottom: 100px;
+  /* margin: 100px; */
+  /* margin: 400px 30px 30px 165px; */
+}
+.texto-sobre span {
+  color: var(--verde);
+}
+
+.segundo-texto {
+  text-align: center;
+  color: var(--branco-suave); /* Cor do texto */
+
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  font-weight: 500;
+  /* max-width: 30vw; */
+  margin-bottom: 100px;
+}
+.img-empresa {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
