@@ -12,8 +12,8 @@
 
 :root {
   --Azul-escuro: #03012c;
-  --verde: #0086a4;
   --branco-suave: #f7f3f3;
+  --verde: #0086A4;
   --preto: #0a0a0a;
   --branco-cinza:#F4F4F9
 }
@@ -380,7 +380,7 @@ input[type="text"] {
 }
 
 .texto-sobre {
-  ont-size: 1.7em;
+  font-size: 1.7em;
   text-align: center;
   color: var(--Azul-escuro); /* Cor do texto */
 
@@ -394,4 +394,13 @@ input[type="text"] {
 
 .texto-sobre span {
   color: var(--verde);
+}
+.segundo-texto {
+  text-align: center;
+  margin-top: 20px; /* Espaço acima do parágrafo */
+  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+  color: var(--Azul-escuro); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  max-width: 40vw;
 }
