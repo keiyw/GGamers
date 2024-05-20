@@ -126,7 +126,7 @@ body {
   max-width: 30vw;
   margin-bottom: 90px;
   /* margin: 100px; */
-  /* margin: 400px 30px 30px 165px; */
+  /* margin: 100px 30px 30px 165px; */
 }
 .conteudo {
   display: flex;
@@ -356,16 +356,14 @@ input[type="text"] {
 }
 
 .titulo-C {
-  ont-size: 1.7em;
   text-align: center;
   color: var(--Azul-escuro); /* Cor do texto */
 
-  margin-top: 10px; /* Espaço acima do parágrafo */
-  margin-bottom: 10px; /* Espaço abaixo do parágrafo */
   font-size: 20px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   font-weight: 700;
-  max-width: 40vw;
+  max-width: 30vw;
+  margin-bottom: 90px;
 }
 
 .titulo-C span{
@@ -404,3 +402,136 @@ input[type="text"] {
   font-family: "Montserrat"; /* Família da fonte */
   max-width: 40vw;
 }
+
+
+/* Definição da animação de rolagem */
+/* REGRAS: calc(${largura do slide-item + margem à esquerda + margem à direita}px * ${total de slide-items}) */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-280px * 4)); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(calc(-280px * 4)); }
+  100% { transform: translateX(0); }
+}
+
+/* Estilos do slider */
+.slider {
+  margin: auto; /* Centraliza horizontalmente */
+  overflow: hidden; /* Esconde conteúdo que ultrapassa os limites */
+  position: relative; /* Define o contexto de posicionamento */
+  width: 960px; /* Largura do slider (ajuste conforme necessário) */
+}
+
+/* Estilos do track dos slides */
+.slide-track {
+  display: flex; /* Exibe como flexbox */
+  width: calc(280px * 8); /* Largura do track (ajuste conforme necessário) */
+}
+
+/* Animações de rolagem para esquerda e direita */
+.slide-track.left {
+  animation: scroll-left 12s linear infinite; /* Animação para a esquerda */
+}
+
+.slide-track.right {
+  animation: scroll-right 12s linear infinite; /* Animação para a direita */
+}
+
+/* Pausa a animação ao passar o mouse sobre o track */
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+/* Estilos dos itens de slide */
+.slide-item {
+  width: 350px; /* Largura do slide-item */
+  margin: 10px; /* Margem entre os slide-items */
+  border-radius: 10px; /* Borda arredondada */
+  transition: transform 0.5s, box-shadow 0.5s; /* Transição suave */
+}
+
+.slide-item img {
+  width: 100%; /* Garante que a imagem ocupe a largura total do slide-item */
+  height: 100%; /* Garante que a imagem ocupe a altura total do slide-item */
+  object-fit: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+  border-radius: 10px; /* Borda arredondada nas imagens */
+  margin: 10px; /* Margem ao redor da imagem */
+} 
+/* Efeito ao passar o mouse sobre o slide-item */
+.slide-item:hover {
+  transform: scale(1.05); /* Ampliação do slide-item */
+  cursor: pointer; /* Altera o cursor ao passar o mouse */
+ 
+}
+
+/* Estilos para telas menores que 600px de largura */
+@media only screen and (max-width: 600px) {
+  .slider {
+    width: 100vw; /* Largura do slider ajustada para a largura da tela */
+  }
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+}
+
+.container > div {
+  flex: 0 0 120px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.container > div:nth-of-type(1) {
+  background: url("img/empresa.jpg") no-repeat 50% / cover;
+}
+
+.container > div:nth-of-type(2) {
+  background: url("img/foto\ empresa.svg") no-repeat 50% / cover;
+}
+
+.container > div:nth-of-type(3) {
+  background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat 50% / cover;
+}
+
+.container > div:nth-of-type(4) {
+  background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat 50% / cover;
+}
+
+.container > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: rgb(2, 2, 46);
+  background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077030812324) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translatey(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
+
+.container > div:hover {
+  flex: 0 0 250px;
+  box-shadow: 1px 3px 15px #7645d8;
+  transform: translatey(-30px);
+}
+
+.container > div:hover .content {
+  opacity: 1;
+  transform: translatey(0%);
+  visibility: visible;
+}
+
