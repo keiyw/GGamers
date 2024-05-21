@@ -393,15 +393,7 @@ input[type="text"] {
 .texto-sobre span {
   color: var(--verde);
 }
-.segundo-texto {
-  text-align: center;
-  margin-top: 20px; /* Espaço acima do parágrafo */
-  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
-  color: var(--Azul-escuro); /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
-  max-width: 40vw;
-}
+
 
 
 /* Definição da animação de rolagem */
@@ -475,9 +467,9 @@ input[type="text"] {
 .container {
   width: 100%;
   display: flex;
-  justify-content: center;
-  height: 500px;
-  gap: 10px;
+  justify-content: right;
+  height: 400px;
+  /* gap: 10px; */
 }
 
 .container > div {
@@ -485,25 +477,77 @@ input[type="text"] {
   border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  box-shadow: 1px 5px 15px #1e0e3e;
+  /* box-shadow: 1px 5px 15px #1e0e3e; */
   position: relative;
   overflow: hidden;
 }
 
+.textos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha itens à esquerda */
+  justify-content: center; /* Centraliza verticalmente */
+  height: 70vh; /* Ajuste conforme necessário */
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+.container > div {
+  width: 250px; /* Ajuste conforme necessário */
+  height: 250px; /* Ajuste conforme necessário */
+  margin: 10px; /* Espaçamento entre as imagens */
+}
+
+.textos-e-imagens {
+  display: flex;
+  align-items: flex-start; /* Alinha itens no topo */
+  justify-content: space-between; /* Espaça o texto e as imagens */
+}
+
+.texto-container {
+  flex: 1; /* Ocupará o espaço disponível à esquerda */
+  margin-right: 20px; /* Espaço entre o texto e as imagens */
+}
+
+.segundo-texto {
+  text-align: center; /* Alinha o texto à esquerda */
+  margin-top: 20px; /* Espaço acima do parágrafo */
+  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+  color: var(--Azul-escuro); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: "Montserrat"; /* Família da fonte */
+  max-width: 40vw;
+}
+
+.container {
+  display: flex;
+  justify-items: right;
+  justify-content: flex-end; /* Alinha as imagens à direita */
+}
+
+.container > div {
+  width: 40px; /* Ajuste conforme necessário */
+  height: 250px; /* Ajuste conforme necessário */
+ 
+}
+
 .container > div:nth-of-type(1) {
-  background: url("img/empresa.jpg") no-repeat 50% / cover;
+  background: url("img/empresa.jpg") no-repeat center / cover;
 }
 
 .container > div:nth-of-type(2) {
-  background: url("img/foto\ empresa.svg") no-repeat 50% / cover;
+  background: url("img/empresa2 (1).jpg") no-repeat center / cover;
 }
 
 .container > div:nth-of-type(3) {
-  background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat 50% / cover;
+  background: url("img/empresa3.jpg") no-repeat center / cover;
 }
 
 .container > div:nth-of-type(4) {
-  background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat 50% / cover;
+  background: url("img/empresa4.jpg") no-repeat center / cover;
 }
 
 .container > div .content {
@@ -516,22 +560,19 @@ input[type="text"] {
   flex-direction: column;
   height: 100%;
   justify-content: flex-end;
-  background: rgb(2, 2, 46);
-  background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077030812324) 0%, rgba(255, 255, 255, 0) 100%);
-  transform: translatey(100%);
+  transform: translateY(100%);
   transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
   visibility: hidden;
 }
 
 .container > div:hover {
   flex: 0 0 250px;
-  box-shadow: 1px 3px 15px #7645d8;
-  transform: translatey(-30px);
+  transform: translateY(-30px);
 }
 
 .container > div:hover .content {
   opacity: 1;
-  transform: translatey(0%);
+  transform: translateY(0%);
   visibility: visible;
 }
 
