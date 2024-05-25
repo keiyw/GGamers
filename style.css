@@ -13,14 +13,16 @@
 :root {
   --Azul-escuro: #03012c;
   --branco-suave: #f7f3f3;
-  --verde: #0086A4;
+  --verde: #0086a4;
   --preto: #0a0a0a;
-  --branco-cinza:#F4F4F9
+  --branco-cinza: #f4f4f9;
 }
 
 body {
   background-color: var(--branco-cinza);
-  color: var(--branco-cinza); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
+  color: var(
+    --branco-cinza
+  ); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
 }
 
 /* Reset CSS */
@@ -29,8 +31,8 @@ body {
   text-decoration: none;
   color: var(--preto);
   font-size: 1.2em;
-  transition: .5s;
-  transform: scale(.9);
+  transition: 0.5s;
+  transform: scale(0.9);
   border-radius: 10%;
   /* color: var(--verde);
   /* text-shadow: 0 0 5px var(--verde); */
@@ -40,7 +42,6 @@ body {
   /* box-shadow: 0 0 15px var(--Azul-escuro); */
   animation: 1s clockwise infinite;
 }
-
 
 .menu {
   display: flex;
@@ -106,7 +107,6 @@ body {
 .cta:active {
   transform: scale(0.95);
 }
-
 
 .imagem-central {
   width: 40vw;
@@ -316,7 +316,7 @@ input[type="text"] {
   border-color: var(--verde);
   color: var(--verde);
   transform: scale(1.1);
-  background-color:  var(--branco-cinza);
+  background-color: var(--branco-cinza);
 }
 
 .container-grid {
@@ -353,25 +353,21 @@ input[type="text"] {
   grid-area: basquete;
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
-   
 }
 .img2 {
   grid-area: fifa;
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
-   
 }
 .img3 {
   grid-area: carro;
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
-   
 }
 .img4 {
   grid-area: xadrez;
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
-   
 }
 
 .secao-jogos {
@@ -399,8 +395,10 @@ input[type="text"] {
   margin-top: 70%;
 }
 
-.img1:hover, .img2:hover, .img3:hover, .img4:hover {
-
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover {
   /* min-width: 500px; */
   transform: scale(1.1);
 }
@@ -416,14 +414,14 @@ input[type="text"] {
   margin-bottom: 90px;
 }
 
-.titulo-C span{
+.titulo-C span {
   color: var(--verde);
 }
 
 .imagens-carousel {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -444,18 +442,24 @@ input[type="text"] {
   color: var(--verde);
 }
 
-
-
 /* Definição da animação de rolagem */
 /* REGRAS: calc(${largura do slide-item + margem à esquerda + margem à direita}px * ${total de slide-items}) */
 @keyframes scroll-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-280px * 4)); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-280px * 4));
+  }
 }
 
 @keyframes scroll-right {
-  0% { transform: translateX(calc(-280px * 4)); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(calc(-280px * 4));
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Estilos do slider */
@@ -488,7 +492,7 @@ input[type="text"] {
 
 /* Estilos dos itens de slide */
 .slide-item {
-  width: 350px; /* Largura do slide-item */
+  width: 250px; /* Largura do slide-item */
   margin: 10px; /* Margem entre os slide-items */
   border-radius: 10px; /* Borda arredondada */
   transition: transform 0.5s, box-shadow 0.5s; /* Transição suave */
@@ -500,12 +504,11 @@ input[type="text"] {
   object-fit: cover; /* Faz com que a imagem cubra todo o espaço disponível */
   border-radius: 10px; /* Borda arredondada nas imagens */
   margin: 10px; /* Margem ao redor da imagem */
-} 
+}
 /* Efeito ao passar o mouse sobre o slide-item */
 .slide-item:hover {
   transform: scale(1.05); /* Ampliação do slide-item */
   cursor: pointer; /* Altera o cursor ao passar o mouse */
- 
 }
 
 /* Estilos para telas menores que 600px de largura */
@@ -581,7 +584,6 @@ input[type="text"] {
 .container > div {
   width: 40px; /* Ajuste conforme necessário */
   height: 250px; /* Ajuste conforme necessário */
- 
 }
 
 .container > div:nth-of-type(1) {
@@ -593,12 +595,10 @@ input[type="text"] {
 }
 
 .container > div:nth-of-type(3) {
-<<<<<<< HEAD
   background: url("img/empresa3.jpg") no-repeat center / cover;
-=======
-  background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat 50% / cover;
 
->>>>>>> 4e05ed8 (.)
+  background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    no-repeat 50% / cover;
 }
 
 .container > div:nth-of-type(4) {
@@ -631,7 +631,7 @@ input[type="text"] {
   visibility: visible;
 }
 
-.titulo-case{
+.titulo-case {
   font-size: 1.7em;
   text-align: center;
   color: var(--Azul-escuro); /* Cor do texto */
@@ -657,13 +657,13 @@ input[type="text"] {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card svg {
   width: 48px;
   fill: #333;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover {
@@ -682,7 +682,7 @@ input[type="text"] {
   box-sizing: border-box;
   background-color: #fff;
   opacity: 0;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover .card__content {
@@ -773,7 +773,7 @@ ul {
 }
 
 .footer-col ul li a:hover {
-  color:var(--verde);
+  color: var(--verde);
   padding-left: 8px;
 }
 
@@ -795,14 +795,12 @@ ul {
   background-color: var(--verde);
 }
 
-
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
 }
-
 
 @media (max-width: 574px) {
   .footer-col {
