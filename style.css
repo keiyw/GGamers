@@ -467,7 +467,9 @@ input[type="text"] {
   margin: auto; /* Centraliza horizontalmente */
   overflow: hidden; /* Esconde conteúdo que ultrapassa os limites */
   position: relative; /* Define o contexto de posicionamento */
-  width: 960px; /* Largura do slider (ajuste conforme necessário) */
+  width: 1200px; /* Largura do slider (ajuste conforme necessário) */
+  display: flex;
+  justify-content: center;
 }
 
 /* Estilos do track dos slides */
@@ -478,7 +480,7 @@ input[type="text"] {
 
 /* Animações de rolagem para esquerda e direita */
 .slide-track.left {
-  animation: scroll-left 12s linear infinite; /* Animação para a esquerda */
+  animation: scroll-left 12s linear infinite ; /* Animação para a esquerda */
 }
 
 .slide-track.right {
@@ -517,15 +519,8 @@ input[type="text"] {
     width: 100vw; /* Largura do slider ajustada para a largura da tela */
   }
 }
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  height: 400px;
-  /* gap: 10px; */
-}
 
-.container > div {
+.content-images > div {
   flex: 0 0 120px;
   border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
@@ -543,12 +538,7 @@ input[type="text"] {
   height: 70vh; /* Ajuste conforme necessário */
 }
 
-.container {
-  display: flex;
-  justify-content: flex-end; /* Alinha os itens à direita */
-}
-
-.container > div {
+.content-images > div {
   width: 250px; /* Ajuste conforme necessário */
   height: 250px; /* Ajuste conforme necessário */
   margin: 10px; /* Espaçamento entre as imagens */
@@ -575,37 +565,32 @@ input[type="text"] {
   max-width: 40vw;
 }
 
-.container {
-  display: flex;
-  justify-items: right;
-  justify-content: flex-end; /* Alinha as imagens à direita */
-}
-
-.container > div {
+.content-images > img {
   width: 40px; /* Ajuste conforme necessário */
   height: 250px; /* Ajuste conforme necessário */
 }
 
-.container > div:nth-of-type(1) {
+.content-images > div:nth-of-type(1) {
   background: url("img/empresa.jpg") no-repeat center / cover;
+
 }
 
-.container > div:nth-of-type(2) {
+.content-images > div:nth-of-type(2) {
   background: url("img/empresa2 (1).jpg") no-repeat center / cover;
 }
 
-.container > div:nth-of-type(3) {
+.content-images > div:nth-of-type(3) {
   background: url("img/empresa3.jpg") no-repeat center / cover;
 
   background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
     no-repeat 50% / cover;
 }
 
-.container > div:nth-of-type(4) {
+.content-images > div:nth-of-type(4) {
   background: url("img/empresa4.jpg") no-repeat center / cover;
 }
 
-.container > div .content {
+.content-images > div .content {
   font-size: 1.5rem;
   color: #fff;
   display: flex;
@@ -620,12 +605,12 @@ input[type="text"] {
   visibility: hidden;
 }
 
-.container > div:hover {
+.content-images > div:hover {
   flex: 0 0 250px;
   transform: translateY(-30px);
 }
 
-.container > div:hover .content {
+.content-images> div:hover .content {
   opacity: 1;
   transform: translateY(0%);
   visibility: visible;
@@ -652,6 +637,7 @@ input[type="text"] {
   width: 300px;
   height: 200px;
   background: var(--verde);
+  margin: 0px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -710,8 +696,9 @@ input[type="text"] {
 }
 .card-pai {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0px 50px 0px;
 }
 .card-1 {
   max-width: 1170px;
