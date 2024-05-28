@@ -4,7 +4,8 @@
 }
 
 * {
-  margin: 0 auto; /*configuracao do site*/
+  margin: 0 auto;
+  /*configuracao do site*/
   box-sizing: border-box;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -20,9 +21,8 @@
 
 body {
   background-color: var(--branco-cinza);
-  color: var(
-    --branco-cinza
-  ); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
+  color: var(--branco-cinza);
+  /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
 }
 
 /* Reset CSS */
@@ -37,14 +37,16 @@ body {
   /* color: var(--verde);
   /* text-shadow: 0 0 5px var(--verde); */
 }
+
 .menu a:hover::before {
   transform: translate(-50%, -50%);
   /* box-shadow: 0 0 15px var(--Azul-escuro); */
   animation: 1s clockwise infinite;
 
 }
-.menu a:hover::before{
- color: var(--branco-cinza);
+
+.menu a:hover::before {
+  color: var(--branco-cinza);
 }
 
 .menu {
@@ -123,13 +125,19 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .paragrafo {
   text-align: center;
-  margin-top: 20px; /* Espaço acima do parágrafo */
-  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
-  color: var(--Azul-escuro); /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
+  margin-top: 20px;
+  /* Espaço acima do parágrafo */
+  margin-bottom: 20px;
+  /* Espaço abaixo do parágrafo */
+  color: var(--Azul-escuro);
+  /* Cor do texto */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-family: "Montserrat";
+  /* Família da fonte */
   max-width: 40vw;
 }
 
@@ -143,13 +151,19 @@ body {
 
 .p-segundo {
   text-align: center;
-  margin-top: 20px; /* Espaço acima do parágrafo */
-  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
-  color: var(--Azul-escuro); /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
+  margin-top: 20px;
+  /* Espaço acima do parágrafo */
+  margin-bottom: 30px;
+  /* Espaço abaixo do parágrafo */
+  color: var(--Azul-escuro);
+  /* Cor do texto */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-family: "Montserrat";
+  /* Família da fonte */
   max-width: 40vw;
 }
+
 .s-paragrafo span {
   color: var(--verde);
 }
@@ -157,43 +171,55 @@ body {
 .s-paragrafo {
   font-size: 1.7em;
   text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
+  color: var(--Azul-escuro);
+  /* Cor do texto */
 
-  margin-top: 10px; /* Espaço acima do parágrafo */
-  margin-bottom: 10px; /* Espaço abaixo do parágrafo */
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
+  margin-top: 10px;
+  /* Espaço acima do parágrafo */
+  margin-bottom: 10px;
+  /* Espaço abaixo do parágrafo */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-family: "Montserrat";
+  /* Família da fonte */
   font-weight: 700;
   max-width: 40vw;
 }
+
 .titulo-jogos span {
   color: var(--verde);
 }
 
 .titulo-jogos {
   text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
+  color: var(--Azul-escuro);
+  /* Cor do texto */
 
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-family: "Montserrat";
+  /* Família da fonte */
   font-weight: 700;
   max-width: 30vw;
   margin-bottom: 90px;
   /* margin: 100px; */
   /* margin: 100px 30px 30px 165px; */
 }
+
 .conteudo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
 }
+
 .centro-J {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+
 .centro2 {
   display: flex;
   flex-direction: row-reverse;
@@ -222,12 +248,18 @@ input[type="text"] {
 }
 
 #searchInput {
-  width: 200px; /* largura */
-  height: 30px; /* altura */
-  padding: 5px; /* preenchimento */
-  border: 1px solid var(--verde); /* borda */
-  border-radius: 5px; /* raio da borda */
-  font-size: 15px; /* tamanho da fonte */
+  width: 200px;
+  /* largura */
+  height: 30px;
+  /* altura */
+  padding: 5px;
+  /* preenchimento */
+  border: 1px solid var(--verde);
+  /* borda */
+  border-radius: 5px;
+  /* raio da borda */
+  font-size: 15px;
+  /* tamanho da fonte */
 }
 
 #searchInput {
@@ -342,13 +374,16 @@ input[type="text"] {
 .basquete {
   width: 350px;
 }
+
 .fifa {
   width: 500px;
   margin: 0px 20px 0px 20px;
 }
+
 .carro {
   width: 340px;
 }
+
 .xadrez {
   width: 1250px;
 }
@@ -358,16 +393,19 @@ input[type="text"] {
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
 }
+
 .img2 {
   grid-area: fifa;
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
 }
+
 .img3 {
   grid-area: carro;
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
 }
+
 .img4 {
   grid-area: xadrez;
   transition: transform 0.8s ease-in-out;
@@ -399,24 +437,28 @@ input[type="text"] {
   margin-top: 70%;
 }
 
+/* 
 .img1:hover,
 .img2:hover,
 .img3:hover,
 .img4:hover {
   /* min-width: 500px; */
-  transform: scale(1.1);
-}
+/* transform: scale(1.1); */
+/* } */
 
 .titulo-C {
   text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
+  color: var(--Azul-escuro);
+  /* Cor do texto */
 
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-family: "Montserrat";
+  /* Família da fonte */
   font-weight: 700;
   max-width: 30vw;
   margin-bottom: 90px;
-  
+
 }
 
 .titulo-C span {
@@ -433,12 +475,17 @@ input[type="text"] {
 .texto-sobre {
   font-size: 1.7em;
   text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
+  color: var(--Azul-escuro);
+  /* Cor do texto */
 
-  margin-top: 10px; /* Espaço acima do parágrafo */
-  margin-bottom: 10px; /* Espaço abaixo do parágrafo */
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
+  margin-top: 10px;
+  /* Espaço acima do parágrafo */
+  margin-bottom: 10px;
+  /* Espaço abaixo do parágrafo */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-family: "Montserrat";
+  /* Família da fonte */
   font-weight: 700;
   max-width: 40vw;
 }
@@ -453,6 +500,7 @@ input[type="text"] {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-280px * 4));
   }
@@ -462,6 +510,7 @@ input[type="text"] {
   0% {
     transform: translateX(calc(-280px * 4));
   }
+
   100% {
     transform: translateX(0);
   }
@@ -469,27 +518,35 @@ input[type="text"] {
 
 /* Estilos do slider */
 .slider {
-  margin: auto; /* Centraliza horizontalmente */
-  overflow: hidden; /* Esconde conteúdo que ultrapassa os limites */
-  position: relative; /* Define o contexto de posicionamento */
-  width: 1200px; /* Largura do slider (ajuste conforme necessário) */
+  margin: auto;
+  /* Centraliza horizontalmente */
+  overflow: hidden;
+  /* Esconde conteúdo que ultrapassa os limites */
+  position: relative;
+  /* Define o contexto de posicionamento */
+  width: 1200px;
+  /* Largura do slider (ajuste conforme necessário) */
   display: flex;
   justify-content: center;
 }
 
 /* Estilos do track dos slides */
 .slide-track {
-  display: flex; /* Exibe como flexbox */
-  width: calc(280px * 8); /* Largura do track (ajuste conforme necessário) */
+  display: flex;
+  /* Exibe como flexbox */
+  width: calc(280px * 8);
+  /* Largura do track (ajuste conforme necessário) */
 }
 
 /* Animações de rolagem para esquerda e direita */
 .slide-track.left {
-  animation: scroll-left 12s linear infinite ; /* Animação para a esquerda */
+  animation: scroll-left 12s linear infinite;
+  /* Animação para a esquerda */
 }
 
 .slide-track.right {
-  animation: scroll-right 12s linear infinite; /* Animação para a direita */
+  animation: scroll-right 12s linear infinite;
+  /* Animação para a direita */
 }
 
 /* Pausa a animação ao passar o mouse sobre o track */
@@ -499,29 +556,42 @@ input[type="text"] {
 
 /* Estilos dos itens de slide */
 .slide-item {
-  width: 250px; /* Largura do slide-item */
-  margin: 10px; /* Margem entre os slide-items */
-  border-radius: 10px; /* Borda arredondada */
-  transition: transform 0.5s, box-shadow 0.5s; /* Transição suave */
+  width: 250px;
+  /* Largura do slide-item */
+  margin: 10px;
+  /* Margem entre os slide-items */
+  border-radius: 10px;
+  /* Borda arredondada */
+  transition: transform 0.5s, box-shadow 0.5s;
+  /* Transição suave */
 }
 
 .slide-item img {
-  width: 100%; /* Garante que a imagem ocupe a largura total do slide-item */
-  height: 100%; /* Garante que a imagem ocupe a altura total do slide-item */
-  object-fit: cover; /* Faz com que a imagem cubra todo o espaço disponível */
-  border-radius: 10px; /* Borda arredondada nas imagens */
-  margin: 10px; /* Margem ao redor da imagem */
+  width: 100%;
+  /* Garante que a imagem ocupe a largura total do slide-item */
+  height: 100%;
+  /* Garante que a imagem ocupe a altura total do slide-item */
+  object-fit: cover;
+  /* Faz com que a imagem cubra todo o espaço disponível */
+  border-radius: 10px;
+  /* Borda arredondada nas imagens */
+  margin: 10px;
+  /* Margem ao redor da imagem */
 }
+
 /* Efeito ao passar o mouse sobre o slide-item */
 .slide-item:hover {
-  transform: scale(1.05); /* Ampliação do slide-item */
-  cursor: pointer; /* Altera o cursor ao passar o mouse */
+  transform: scale(1.05);
+  /* Ampliação do slide-item */
+  cursor: pointer;
+  /* Altera o cursor ao passar o mouse */
 }
 
 /* Estilos para telas menores que 600px de largura */
 @media only screen and (max-width: 600px) {
   .slider {
-    width: 100vw; /* Largura do slider ajustada para a largura da tela */
+    width: 100vw;
+    /* Largura do slider ajustada para a largura da tela */
   }
 }
 
@@ -530,31 +600,44 @@ input[type="text"] {
 .textos {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinha itens à esquerda */
-  justify-content: center; /* Centraliza verticalmente */
-  height: 70vh; /* Ajuste conforme necessário */
+  align-items: flex-start;
+  /* Alinha itens à esquerda */
+  justify-content: center;
+  /* Centraliza verticalmente */
+  height: 70vh;
+  /* Ajuste conforme necessário */
 }
 
 /*  */
 
 .textos-e-imagens {
   display: flex;
-  align-items: flex-start; /* Alinha itens no topo */
-  justify-content: space-between; /* Espaça o texto e as imagens */
+  align-items: flex-start;
+  /* Alinha itens no topo */
+  justify-content: space-between;
+  /* Espaça o texto e as imagens */
 }
 
 .texto-container {
-  flex: 1; /* Ocupará o espaço disponível à esquerda */
-  margin-right: 20px; /* Espaço entre o texto e as imagens */
+  flex: 1;
+  /* Ocupará o espaço disponível à esquerda */
+  margin-right: 20px;
+  /* Espaço entre o texto e as imagens */
 }
 
 .segundo-texto {
-  text-align: center; /* Alinha o texto à esquerda */
-  margin-top: 20px; /* Espaço acima do parágrafo */
-  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
-  color: var(--Azul-escuro); /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
+  text-align: center;
+  /* Alinha o texto à esquerda */
+  margin-top: 30px;
+  /* Espaço acima do parágrafo */
+  margin-bottom: 10px;
+  /* Espaço abaixo do parágrafo */
+  color: var(--Azul-escuro);
+  /* Cor do texto */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-family: "Montserrat";
+  /* Família da fonte */
   max-width: 40vw;
 }
 
@@ -563,15 +646,21 @@ input[type="text"] {
 .titulo-case {
   font-size: 1.7em;
   text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
+  color: var(--Azul-escuro);
+  /* Cor do texto */
 
-  margin-top: 10px; /* Espaço acima do parágrafo */
-  margin-bottom: 10px; /* Espaço abaixo do parágrafo */
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: "Montserrat"; /* Família da fonte */
+  margin-top: 10px;
+  /* Espaço acima do parágrafo */
+  margin-bottom: 10px;
+  /* Espaço abaixo do parágrafo */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-family: "Montserrat";
+  /* Família da fonte */
   font-weight: 700;
   max-width: 40vw;
 }
+
 .titulo-case span {
   color: var(--verde);
 }
@@ -638,12 +727,14 @@ input[type="text"] {
   scale: 0;
   transform: rotate(-45deg);
 }
+
 .card-pai {
   display: flex;
   justify-content: center;
   gap: 50px;
   margin: 50px 0px 50px 0px;
 }
+
 .card-1 {
   max-width: 1170px;
   margin: auto;
@@ -738,6 +829,7 @@ ul {
     width: 100%;
   }
 }
+
 ul {
   list-style: none;
 }
@@ -747,10 +839,12 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
 .example-2 .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 .example-2 .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -764,11 +858,13 @@ ul {
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: -50px;
 }
+
 .example-2 .icon-content a {
   position: relative;
   overflow: hidden;
@@ -782,18 +878,22 @@ ul {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 .example-2 .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
+
 .example-2 .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 30px;
   height: 30px;
 }
+
 .example-2 .icon-content a:hover {
   color: white;
 }
+
 .example-2 .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -804,33 +904,33 @@ ul {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 .example-2 .icon-content a:hover .filled {
   height: 100%;
 }
 
 .example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+.example-2 .icon-content a[data-social="linkedin"]~.tooltip {
   background-color: #0274b3;
 }
 
 .example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+.example-2 .icon-content a[data-social="github"]~.tooltip {
   background-color: #24262a;
 }
+
 .example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5b51db,
-    #b33ab4,
-    #c135b4,
-    #e1306c,
-    #fd1f1f
-  );
-}
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-  background-color: #ff0000;
+.example-2 .icon-content a[data-social="instagram"]~.tooltip {
+  background: linear-gradient(45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f);
 }
 
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"]~.tooltip {
+  background-color: #ff0000;
+}
