@@ -1,4 +1,4 @@
-const imageNames = ["carro.jpg", "terror.jpg", "educacional.jpg", "jogo-bike.jpg", "Jogo.jpg", "jogo-quiz.jpg", "RPG.jpg", "jopgo-fps.jpg", "jogo-luta.jpg", "jogo-quiz.jpg", "jogo-tiro.jpg", "jogo-cartas.jpg"];
+const imageNames = ["carro.PNG", "terror.jpg", "educacional.PNG", "jogo-bike.jpg", "Jogo.jpg", "jogo-quiz.jpg", "cs.png", "jogo-cartas.jpg", "jogo-luta.jpg", "jogo-quiz.jng", "mario.PNG", "jogo-cartas.PNG"];
 
 const sliderItems = imageNames.concat(imageNames);
 const sliders = document.querySelectorAll(".slide-track");
