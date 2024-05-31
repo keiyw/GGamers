@@ -229,7 +229,7 @@ body {
   max-width: 32vw;
   padding: 4%;
  
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 5%;
    
 }
@@ -247,7 +247,7 @@ body {
   text-align: center;
   color: var(--branco-cinza);
   font-weight: 700;
-  margin-top: 15%;
+  margin-top: 8%;
   margin-bottom: 5%;
 }
 .conteudo {
@@ -292,9 +292,9 @@ input[type="text"] {
 
 #searchInput {
   width: 200px; /* largura */
-  height: 30px; /* altura */
+  height: 34px; /* altura */
   padding: 5px; /* preenchimento */
-  border: 1px solid var(--verde); /* borda */
+  border: 2px solid var(--verde); /* borda */
   border-radius: 5px; /* raio da borda */
   font-size: 15px; /* tamanho da fonte */
 }
@@ -406,9 +406,12 @@ input[type="text"] {
 }
 
 .chat-boot {
-  display: flex;
-  justify-content: center;
-  margin: auto;
+  
+  
+
+  position: fixed;
+  margin-left: 30%;
+  margin-top: 30%;
 }
 
 .basquete {
@@ -630,11 +633,12 @@ input[type="text"] {
   object-fit: cover;
 }
 .carousel__slide figcaption {
-  align-self: flex-end;
-  padding: 20px 20px 0 20px;
+  display: flex;
+  align-items: center;
   flex: 0 0 auto;
-  width: 25%;
+  width: 42%;
   min-width: 150px;
+  margin: auto 10px auto 10px;
 }
 .carousel__slide .credit {
   margin-top: 1rem;
@@ -706,11 +710,8 @@ input[type="text"] {
  
   font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
-
-  max-width: 30vw;
   font-size: 1.75em;
   text-align: center;
-  width: 30vw;
   color: var(--branco-cinza);
   font-weight: 700;
   margin-top: 8%;
@@ -786,7 +787,7 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin: 50px 0px 160px 181px
+
 }
 .card-1 {
   max-width: 1170px;
@@ -854,9 +855,10 @@ ul {
 }
 
 .footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15%;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -871,11 +873,6 @@ ul {
   font-weight: 500;
   display: block;
   transition: all 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-  color: var(--verde);
-  padding-left: 8px;
 }
 
 .footer-col .social-links a {
