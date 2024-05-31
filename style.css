@@ -19,27 +19,23 @@
 }
 
 body {
-  background-color: var(--branco-cinza);
-  color: var(
-    --branco-cinza
-  ); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
+  background-color: var(--preto);
+  color: var(--preto); /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
 }
 
 /* Reset CSS */
 
 .menu a {
   text-decoration: none;
-  color: var(--preto);
+  color: var(--branco-suave);
   font-size: 1.2em;
   transition: 0.5s;
   transform: scale(0.9);
   border-radius: 10%;
-  /* color: var(--verde);
-  /* text-shadow: 0 0 5px var(--verde); */
+ 
 }
 .menu a:hover::before {
   transform: translate(-50%, -50%);
-  /* box-shadow: 0 0 15px var(--Azul-escuro); */
   animation: 1s clockwise infinite;
 
 }
@@ -49,7 +45,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
 
 .menu {
@@ -58,59 +54,149 @@ body {
   align-items: center;
    /* Espaçamento superior */
 }
-
-.cta {
-  margin: 0 20px;
-  position: relative;
+/* Remove as bordas */
+.btn-31,
+.btn-31 *,
+.btn-31:after,
+.btn-31:before,
+.btn-31:after,
+.btn-31:before {
+  border: none;
+  box-sizing: border-box;
 }
 
-.cta a {
-  color: var(--Azul-escuro);
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 10px;
+/* Estilos gerais do botão */
+.btn-31 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: var(--preto);
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  padding: 1rem 2rem;
   position: relative;
+  text-transform: uppercase;
+  overflow: hidden; /* Garante que o conteúdo extra não será exibido */
 }
 
-.cta a::before,
-.cta a::after {
-  content: '';
+/* Desabilita o cursor quando o botão está desabilitado */
+.btn-31:disabled {
+  cursor: default;
+}
+
+/* Remoção do outline específico do Firefox */
+.btn-31:-moz-focusring {
+  outline: auto;
+}
+
+/* Estilos para SVG dentro do botão */
+.btn-31 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+/* Oculta elementos com atributo hidden */
+.btn-31 [hidden] {
+  display: none;
+}
+
+/* Animação de antes do estado de hover */
+.btn-31:before {
+  --progress: 100%;
+  background: var(--branco-cinza); /* Ajuste a cor conforme necessário */
+  -webkit-clip-path: polygon(100% 0, var() var(--progress), 0 100%, 100% 100%);
+  clip-path: polygon(100% 0, var(--progress) var(--progress), 0 100%, 100% 100%);
+  content: "";
+  inset: 0;
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background: var(--verde);
-  transition: 0.5s;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
 }
 
-.cta a:hover::before,
-.cta a:hover::after {
-  width: 100%;
+/* Estado de hover para animação */
+.btn-31:hover:before {
+  --progress: 0%;
 }
+
+/* Contêiner de texto */
+.btn-31 .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Estilos para o texto */
+.btn-31 .text {
+  display: block;
+  font-weight: 900;
+  mix-blend-mode: difference; /* Mantém a animação de blend mode */
+  position: relative;
+  color: #fff; /* Ajuste a cor conforme necessário */
+}
+
+/* Animação de hover para o texto */
+.btn-31:hover .text {
+  -webkit-animation: move-up-alternate 0.3s ease forwards;
+  animation: move-up-alternate 0.3s ease forwards;
+}
+
+/* Definições da animação */
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
 
 
 
 .imagem-central {
-  width: 40vw;
+  width: 30vw;
+
 }
 
 .secao-gamer {
-  gap: 25px;
-  padding: 40px;
+
+  padding: 100px;
   justify-content: space-around;
   display: flex;
   flex-direction: column;
 }
 .paragrafo {
-  text-align: center;
+  text-align: left;
   margin-top: 20px; /* Espaço acima do parágrafo */
   margin-bottom: 20px; /* Espaço abaixo do parágrafo */
-  color: var(--Azul-escuro); /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
+  color: var(--branco-cinza); /* Cor do texto */
+  font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
-  max-width: 40vw;
+  max-width: 30vw;
 }
 
 .secao-gamer:nth-child(2) {
@@ -118,55 +204,62 @@ body {
 }
 
 .segunda-imagem {
-  width: 700px;
+  width: 30vw;
 }
 
 .p-segundo {
-  text-align: center;
+  text-align: left;
   margin-top: 20px; /* Espaço acima do parágrafo */
-  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
-  color: var(--Azul-escuro); /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
+  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+  color: var(--branco-cinza); /* Cor do texto */
+  font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
-  max-width: 40vw;
+  max-width: 30vw;
+  
 }
 .s-paragrafo span {
   color: var(--verde);
 }
 
 .s-paragrafo {
-  font-size: 1.7em;
+  font-size: 2em;
   text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
+  color: var(--branco-cinza); /* Cor do texto */
 
-  margin-top: 10px; /* Espaço acima do parágrafo */
-  margin-bottom: 10px; /* Espaço abaixo do parágrafo */
-  font-size: 20px; /* Tamanho da fonte */
+  margin-top: 10%; /* Espaço acima do parágrafo */
+  font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   font-weight: 700;
-  max-width: 40vw;
+  max-width: 32vw;
+  padding: 4%;
  
+  margin-top: 10%;
+  margin-bottom: 5%;
+   
 }
 .titulo-jogos span {
   color: var(--verde);
 }
 
 .titulo-jogos {
-  text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
-
-  font-size: 20px; /* Tamanho da fonte */
+  
+  font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
+
+  max-width: 28vw;
+  font-size: 1.75em;
+  text-align: center;
+  color: var(--branco-cinza);
   font-weight: 700;
-  max-width: 20vw;
-  margin: 100px 30px 30px 40px;
+  margin-top: 15%;
+  margin-bottom: 5%;
 }
 .conteudo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
-  margin: 200px 30px 30px 100px;
+  margin: 60px 30px 30px 100px;
 }
 .centro-J {
   display: flex;
@@ -225,8 +318,10 @@ input[type="text"] {
   font-size: 2em;
   text-align: center;
   width: 30vw;
-  color: var(--Azul-escuro);
+  color: var(--branco-cinza);
   font-weight: 700;
+  margin-bottom: 8%;
+ 
 }
 
 .pgamer span {
@@ -259,7 +354,8 @@ input[type="text"] {
 .botoes {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10%;
+  margin-top: 6%
 }
 
 .btn-white {
@@ -286,7 +382,7 @@ input[type="text"] {
 
 .btn-blue:hover {
   border-color: var(--verde);
-  color: var(--Azul-escuro);
+  color: var(--branco-cinza);
   transform: scale(1.1);
   background-color: var(--verde);
 }
@@ -309,7 +405,7 @@ input[type="text"] {
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--branco-cinza);
+  background-color: var(--preto);
   padding: 30px 0 30px 0;
 }
 
@@ -367,12 +463,6 @@ input[type="text"] {
 .secao-jogos img {
   border-radius: 10px;
 }
-
-/* .container-xadrez{
-  width: 79%;
-  margin-bottom: 95px;
-} */
-
 .chat-bot {
   position: fixed;
   margin-left: 30px;
@@ -388,14 +478,18 @@ input[type="text"] {
 }
 
 .titulo-C {
-  text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
-
-  font-size: 20px; /* Tamanho da fonte */
+ 
+  font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
+
+  max-width: 30vw;
+  font-size: 1.75em;
+  text-align: center;
+  width: 33vw;
+  color: var(--branco-cinza);
   font-weight: 700;
-  max-width: 20vw;
-  margin: 149px 0px 70px 409px;
+  margin-top: 15%;
+  margin-bottom: 5%;
   
 }
 
@@ -411,16 +505,17 @@ input[type="text"] {
 }
 
 .texto-sobre {
-  font-size: 1.7em;
-  text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
-
-  margin-top: 233px; /* Espaço acima do parágrafo */
-  margin-bottom: 63px; /* Espaço abaixo do parágrafo */
-  font-size: 20px; /* Tamanho da fonte */
+ 
+  font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
+
+ width: 15vw;
+  font-size: 1.75em;
+  text-align: center;
+  color: var(--branco-cinza);
   font-weight: 700;
-  max-width: 19vw;
+  margin-top: 8%;
+  margin-bottom: 4%;
 }
 
 .texto-sobre span {
@@ -507,24 +602,25 @@ input[type="text"] {
 .segundo-texto {
   text-align: center; /* Alinha o texto à esquerda */
   margin-top: 20px; /* Espaço acima do parágrafo */
-  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
-  color: var(--Azul-escuro); /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
+  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+  color: var(--branco-cinza); /* Cor do texto */
+  font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
-  
 }
 
 .titulo-case {
-  font-size: 1.7em;
-  text-align: center;
-  color: var(--Azul-escuro); /* Cor do texto */
-
-  margin-top: 233px; /* Espaço acima do parágrafo */
-  margin-bottom: 90px; /* Espaço abaixo do parágrafo */
-  font-size: 20px; /* Tamanho da fonte */
+ 
+  font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
+
+  max-width: 30vw;
+  font-size: 1.75em;
+  text-align: center;
+  width: 30vw;
+  color: var(--branco-cinza);
   font-weight: 700;
-  max-width: 40vw;
+  margin-top: 8%;
+  margin-bottom: 5%;
 }
 .titulo-case span {
   color: var(--verde);
@@ -615,33 +711,56 @@ ul {
 
 .footer {
   background-color: var(--preto);
-  padding: 30px 1080px;
+  padding: 30px 0; /* Remove o padding lateral específico */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Centraliza as colunas horizontalmente */
+  flex-wrap: wrap; /* Permite que as colunas quebrem linha se necessário */
 }
 
 .footer-col {
-  width: 28%;
-  padding: 40 40px;
+  flex: 1 1 28%;
+  padding: 40px;
+  box-sizing: border-box;
+  min-width: 200px; /* Para garantir que as colunas não sejam muito pequenas */
 }
 
 .footer-col h4 {
-  font-size: 18px;
-  color: var(--Azul-escuro);
-  text-transform: capitalize;
-  margin-bottom: 38px;
-  font-weight: 700;
-  position: relative;
-  margin: 100px 0px 76px 122px
+  font-size: 20px;
+  font-family: "Montserrat";
+  text-align: center;
+  color: var(--branco-cinza);
+  font-weight: 600;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  position: relative; /* Adicionado para posicionamento correto do ::before */
 }
 
 .footer-col h4::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%; /* Centraliza o pseudo-elemento horizontalmente */
   bottom: -10px;
+  transform: translateX(-50%);
   background-color: var(--verde);
   height: 2px;
-  box-sizing: border-box;
   width: 50px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -653,8 +772,7 @@ ul {
   text-transform: capitalize;
   color: var(--verde);
   text-decoration: none;
-  font-weight: 300;
-  color: var(--verde);
+  font-weight: 500;
   display: block;
   transition: all 0.3s ease;
 }
@@ -694,19 +812,18 @@ ul {
     width: 100%;
   }
 }
-ul {
-  list-style: none;
-}
 
 .example-2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .example-2 .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 .example-2 .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -720,11 +837,13 @@ ul {
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: -50px;
 }
+
 .example-2 .icon-content a {
   position: relative;
   overflow: hidden;
@@ -738,18 +857,22 @@ ul {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 .example-2 .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
+
 .example-2 .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 30px;
   height: 30px;
 }
+
 .example-2 .icon-content a:hover {
   color: white;
 }
+
 .example-2 .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -760,6 +883,7 @@ ul {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 .example-2 .icon-content a:hover .filled {
   height: 100%;
 }
@@ -773,6 +897,7 @@ ul {
 .example-2 .icon-content a[data-social="github"] ~ .tooltip {
   background-color: #24262a;
 }
+
 .example-2 .icon-content a[data-social="instagram"] .filled,
 .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
   background: linear-gradient(
@@ -785,6 +910,7 @@ ul {
     #fd1f1f
   );
 }
+
 .example-2 .icon-content a[data-social="youtube"] .filled,
 .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
   background-color: #ff0000;
