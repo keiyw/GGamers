@@ -174,7 +174,7 @@ body {
 
 
 .imagem-central {
-  width: 30vw;
+  width: 40vw;
 
 }
 
@@ -487,7 +487,7 @@ input[type="text"] {
   width: 33vw;
   color: var(--branco-cinza);
   font-weight: 700;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 5%;
   
 }
@@ -513,8 +513,8 @@ input[type="text"] {
   text-align: center;
   color: var(--branco-cinza);
   font-weight: 700;
-  margin-top: 8%;
-  margin-bottom: 4%;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 .texto-sobre span {
@@ -714,7 +714,7 @@ input[type="text"] {
   text-align: center;
   color: var(--branco-cinza);
   font-weight: 700;
-  margin-top: 8%;
+  margin-top: 7%;
   margin-bottom: 5%;
 }
 .titulo-case span {
