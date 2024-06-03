@@ -226,10 +226,10 @@ body {
   font-size: 25px; /* Tamanho da fonte */
   font-family: "Montserrat"; /* Família da fonte */
   font-weight: 700;
-  max-width: 32vw;
+  max-width: 33vw;
   padding: 4%;
  
-  margin-top: 8%;
+  margin-top: 2%;
   margin-bottom: 5%;
    
 }
@@ -487,7 +487,7 @@ input[type="text"] {
   width: 33vw;
   color: var(--branco-cinza);
   font-weight: 700;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 5%;
   
 }
@@ -808,28 +808,27 @@ ul {
 
 .footer {
   background-color: var(--preto);
-  padding: 30px 0; /* Remove o padding lateral específico */
+  padding: 30px 0; 
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  justify-content: center; 
 }
 
 .card-1 {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; 
 }
-
 .row {
   display: flex;
-  justify-content: center; /* Centraliza as colunas horizontalmente */
-  flex-wrap: wrap; /* Permite que as colunas quebrem linha se necessário */
+  justify-content: center; 
+  flex-wrap: wrap; 
 }
 
 .footer-col {
   flex: 1 1 28%;
   padding: 40px;
   box-sizing: border-box;
-  min-width: 200px; /* Para garantir que as colunas não sejam muito pequenas */
+  min-width: 300px; 
 }
 
 .footer-col h4 {
@@ -840,13 +839,13 @@ ul {
   font-weight: 600;
   margin-top: 15%;
   margin-bottom: 5%;
-  position: relative; /* Adicionado para posicionamento correto do ::before */
+  position: relative;
 }
 
 .footer-col h4::before {
   content: "";
   position: absolute;
-  left: 50%; /* Centraliza o pseudo-elemento horizontalmente */
+  left: 50%; 
   bottom: -10px;
   transform: translateX(-50%);
   background-color: var(--verde);
@@ -1034,6 +1033,42 @@ ul {
   }
 }
 
-@media screen and (max-width 1300px){
-  
+
+@media only screen and (max-width: 1300px) {
+  #searchInput {
+    width: 170px; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #searchInput {
+    width: 200px; 
+ }
+}
+
+@media only screen and (max-width: 480px) {
+  #searchInput {
+    width: 150px; 
+  }
+}
+@media screen and (max-width: 1300px) {
+  .fifa {
+    width: 400px;
+  }
+  .carro {
+    width: 300px;
+  }
+  .basquete {
+    width: 300px;
+  }
+  .titulo-jogos {
+    max-width: 40vw;
+  }
+  .card-pai{
+    gap: 4%;   
+  }
+  .card {
+    width: 240px;
+    height: 170px;
+  }
 }
