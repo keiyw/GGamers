@@ -200,7 +200,7 @@ body {
 }
 
 .segunda-imagem {
-  width: 30vw;
+  width: 40vw;
 }
 
 .p-segundo {
@@ -1032,4 +1032,8 @@ ul {
   .segundo-texto{
     font-size: 20px;
   }
+}
+
+@media screen and (max-width 1300px){
+  
 }
