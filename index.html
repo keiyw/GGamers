@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -37,25 +38,27 @@
         <path d="M737.9 499.8a47.3 44.8 0 1 0 94.6 0 47.3 44.8 0 1 0-94.6 0Z" fill="#144884" />
       </svg>
     </a>
-    <nav class="menu">
+    <nav  id="menu" class="menu">
+
+      
       <button class="btn-31">
         <span class="text-container">
-          <span class="text">Jogos</span>
+          <a href="#jogos" class="text">Jogos</a>
         </span>
       </button>
       <button class="btn-31">
         <span class="text-container">
-          <span class="text">Sobre</span>
+          <a href="#sobre" class="text">Sobre</a>
         </span>
       </button>
       <button class="btn-31">
         <span class="text-container">
-          <span class="text">Cases de sucesso</span>
+          <a href="#cases" class="text">Cases</a>
         </span>
       </button>
       <button class="btn-31">
         <span class="text-container">
-          <span class="text">Contate-nos</span>
+          <a href="#contate-nos" class="text">Contate-nos</span>
         </span>
       </button>
       <button class="btn-31">
@@ -63,11 +66,15 @@
           <a href="login.html" class="text">Login</a>
         </span>
       </button>
-      <div class="barra-container">
+      <!-- <div class="barra-container">
         <input type="text" id="searchInput" placeholder="Pesquisar" />
-      </div>
+      </div> -->
+      
     </nav>
-    </nav>
+    <button onclick="abreFechaMenu()" id="botao-menu">
+      <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+      <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+  </button>
   </header>
   <!-- <ul id="searchList">
     Resultados da pesquisa serão exibidos aqui 
@@ -110,7 +117,7 @@
         </p>
       </div>
     </section>
-    <section class="centro-J">
+    <section class="centro-J" id="jogos">
       <p class="titulo-jogos">
         Encontre os <span>favoritos do momento</span> e dê início à sua experiência 
         <span>hoje mesmo!</span>
@@ -145,7 +152,7 @@
                     <li class="carousel__slide">
                         <figure>
                             <div>
-                                <img src="assets/the-witcher-3.jpg" alt="">
+                                <img src="assets/the-witcher-3.jpg" alt="" >
                             </div>
                             <figcaption style="color: #f4f4f9">
                               The Witcher 3: Wild Hunt é um jogo de RPG aclamado pela crítica, onde os jogadores encarnam Geralt de Rivia, um caçador de monstros. Com uma narrativa envolvente, gráficos impressionantes e um vasto mundo a ser explorado, o jogo cativa os fãs de RPG e oferece uma experiência imersiva e emocionante.
@@ -206,7 +213,7 @@
                 </ul>
                 <ul class="carousel__thumbnails">
                     <li>
-                        <label for="slide-1"><img src="assets/the-witcher-3.jpg" alt=""></label>
+                        <label for="slide-1"><img src="assets/the-witcher-3.jpg" alt="" ></label>
                     </li>
                     <li>
                         <label for="slide-2"><img src="assets/cs.png" alt=""></label>
@@ -228,7 +235,7 @@
         </div>
     </section>
     </section>
-    <section style=" width: 100%; display: flex; flex-direction: row; margin-bottom: 55px;">
+    <section style=" width: 100%; display: flex; flex-direction: row; margin-bottom: 55px;" id="sobre">
       <div class="textos">
         <p class="texto-sobre">
           <span>Explore mais</span> sobre <span> nossa história e quem somos</span>
@@ -236,7 +243,7 @@
 
         <div style="display: flex; justify-content: center; align-items: center; max-width: 80%; margin: 0 auto;">
           <div class="content-images" style=" max-width: 50%;">
-            <img src="img/empresa.jpg" alt="" style="width: 82%;">
+            <img src="img/empresa.jpg" alt="" style="width: 82%; border-radius: 10px;">
           </div>
           <div style="flex: 0 0 50%; max-width: 50%;">
             <p class="segundo-texto" style="text-align: justify;">
@@ -258,7 +265,7 @@
       Cases de <span>Sucesso</span></p>
 
     <div class="card-pai">
-      <div class="card">
+      <div class="card" id="cases">
         <img src="./img/biomove.svg" alt="">
         <div class="card__content">
           <p class="card__title">Biomove
@@ -314,7 +321,7 @@
     <footer>
       <div class="card-1">
         <div class="row">
-          <div class="footer-col">
+          <div class="footer-col" id="contate-nos">
             <h4>Contatos</h4>
             <ul class="example-2" style=" width: 100%; display: flex; flex-direction: row;">
               <li class="icon-content">
@@ -394,4 +401,3 @@
   </section>
 </body>
 
-<script src="./script.js"></script>
