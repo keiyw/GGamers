@@ -386,9 +386,6 @@ body {
 }
 
 .chat-boot {
-
-
-
   position: fixed;
   margin-left: 30%;
   margin-top: 30%;
@@ -925,20 +922,6 @@ ul {
 }
 
 
-
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
-  }
-}
-
 .example-2 {
   display: flex;
   justify-content: center;
@@ -1042,6 +1025,18 @@ ul {
 
 
 
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
 
 @media screen and (max-width: 1920px) {
 
@@ -1090,7 +1085,7 @@ ul {
   }
 
   .card-pai {
-    gap: 4%;
+    gap: 2%;
   }
 
   .card {
@@ -1130,5 +1125,72 @@ ul {
   #botao-menu svg {
     fill: white;
   }
+  .secao-gamer {
+    padding: 30px;}
+    .paragrafo{
+
+      font-size: 18px;
+    }
+    .imagem-central {
+      width: 50vw;
+ }
+  .segunda-imagem {
+    width: 45vw;
+}
+.p-segundo {
+  font-size: 18px;
+  max-width: 39vw;
+}
+}
+@media screen and (max-width: 1080px) {
+  .fifa {
+    width: 360px;
+}
+.basquete {
+  width: 260px;
+}
+.carro {
+  width: 260px;
+}
+.titulo-jogos {
+  max-width: 40vw;
+  font-size: 23px;
+  margin: auto 10px auto 20px;
+  margin-bottom: 4%;
+  margin-top: 7%;
+}
+.s-paragrafo {
+  font-size: 22px;
+  max-width: 38vw;
+  margin: auto 50px auto 10px;
+}
+.paragrafo {
+  font-size: 20px;
+}
+.pgamer {
+  width: 30vw;
+}
+.titulo-C {
+  
+  width: 35vw;
+  max-width: 35vw;
+}
+.carousel__slide figure {
+  display: flex;
+  margin: 45px;
 
 }
+.carousel__slide figcaption {
+  width: 40%;
+}
+.carousel__thumbnails {
+  margin: 10px -10px 10px 35px;
+}
+.segundo-texto {
+  max-width: 91%;
+  
+}
+}
+
+
+
