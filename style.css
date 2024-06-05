@@ -1,30 +1,27 @@
 @font-face {
-  font-family : "Montserrat";
-  src : url(fonts/Montserrat-VariableFont_wght.ttf);
-  }
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
 
-  * {
-    margin : 0 auto;
-    box-sizing : border-box;
-    padding : 0;
-    font-family : "Montserrat", sans-serif;
-    }
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
 
 :root {
-  --azul-escuro : #03012c;
-  --branco-suave : #f7f3f3;
-  --verde : #0086a4;
-  --preto : #0a0a0a;
-  --branco-cinza : #f4f4f9;
-  }
+  --azul-escuro: #03012c;
+  --branco-suave: #f7f3f3;
+  --verde: #0086a4;
+  --preto: #0a0a0a;
+  --branco-cinza: #f4f4f9;
+}
 
 body {
   background-color: var(--preto);
   color: var(--preto);
-  /* Isso vai mudar a cor do texto para branco, para melhor legibilidade */
 }
-
-/* Reset CSS */
 
 .menu a {
   text-decoration: none;
@@ -54,10 +51,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Espaçamento superior */
 }
 
-/* Remove as bordas */
+.menu-fechado {
+  display: none;
+}
+
+#icone-barras {
+  display: none;
+}
+
+#botao-menu{
+  display: none;
+}
+
 .btn-31,
 .btn-31 *,
 .btn-31:after,
@@ -68,7 +75,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Estilos gerais do botão */
 .btn-31 {
   -webkit-tap-highlight-color: transparent;
 
@@ -83,31 +89,24 @@ body {
   position: relative;
   text-transform: uppercase;
   overflow: hidden;
- 
+
 }
 
-/* Desabilita o cursor quando o botão está desabilitado */
 .btn-31:disabled {
   cursor: default;
 }
 
-/* Remoção do outline específico do Firefox */
 .btn-31:-moz-focusring {
   outline: auto;
 }
 
-
-
-/* Oculta elementos com atributo hidden */
 .btn-31 [hidden] {
   display: none;
 }
 
-/* Animação de antes do estado de hover */
 .btn-31:before {
   --progress: 100%;
   background: var(--branco-cinza);
-  /* Ajuste a cor conforme necessário */
   -webkit-clip-path: polygon(100% 0, var() var(--progress), 0 100%, 100% 100%);
   clip-path: polygon(100% 0, var(--progress) var(--progress), 0 100%, 100% 100%);
   content: "";
@@ -116,7 +115,6 @@ body {
   transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
 }
 
-/* Estado de hover para animação */
 .btn-31:hover:before {
   --progress: 0%;
 }
@@ -128,15 +126,13 @@ body {
   position: relative;
 }
 
-/* Estilos para o texto */
 .btn-31 .text {
   display: block;
   font-weight: 900;
   mix-blend-mode: difference;
-  /* Mantém a animação de blend mode */
   position: relative;
   color: #fff;
-  
+
 }
 
 
@@ -145,7 +141,6 @@ body {
   animation: move-up-alternate 0.3s ease forwards;
 }
 
-/* Definições da animação */
 @-webkit-keyframes move-up-alternate {
   0% {
     transform: translateY(0);
@@ -166,21 +161,21 @@ body {
 
 @keyframes move-up-alternate {
   0% {
-  transform : translateY(0);
+    transform: translateY(0);
   }
 
   50% {
-  transform : translateY(80%);
+    transform: translateY(80%);
   }
 
   51% {
-  transform : translateY(-80%);
+    transform: translateY(-80%);
   }
 
   to {
-  transform : translateY(0);
+    transform: translateY(0);
   }
-  }
+}
 
 
 
@@ -202,15 +197,10 @@ body {
 .paragrafo {
   text-align: left;
   margin-top: 20px;
-  /* Espaço acima do parágrafo */
   margin-bottom: 20px;
-  /* Espaço abaixo do parágrafo */
   color: var(--branco-cinza);
-  /* Cor do texto */
   font-size: 25px;
-  /* Tamanho da fonte */
   font-family: "Montserrat";
-  /* Família da fonte */
   max-width: 30vw;
 }
 
@@ -225,15 +215,10 @@ body {
 .p-segundo {
   text-align: left;
   margin-top: 20px;
-  /* Espaço acima do parágrafo */
   margin-bottom: 20px;
-  /* Espaço abaixo do parágrafo */
   color: var(--branco-cinza);
-  /* Cor do texto */
   font-size: 25px;
-  /* Tamanho da fonte */
   font-family: "Montserrat";
-  /* Família da fonte */
   max-width: 30vw;
 
 }
@@ -265,9 +250,7 @@ body {
 .titulo-jogos {
 
   font-size: 25px;
-  /* Tamanho da fonte */
   font-family: "Montserrat";
-  /* Família da fonte */
 
   max-width: 28vw;
   font-size: 1.75em;
@@ -306,45 +289,6 @@ body {
   justify-content: center;
 }
 
-.search-container {
-  display: flex;
-  width: 300px;
-  margin: 20px auto;
-}
-
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-#searchInput {
-  width: 200px;
-  /* largura */
-  height: 34px;
-  /* altura */
-  padding: 5px;
-  /* preenchimento */
-  border: 2px solid var(--verde);
-  /* borda */
-  border-radius: 5px;
-  /* raio da borda */
-  font-size: 15px;
-  /* tamanho da fonte */
-}
-
-#searchInput {
-  transition: color 0.8s ease-in-out, transform 0.8s ease-in-out,
-    background-color 0.8s ease-in-out;
-}
-
-#searchInput:hover {
-  color: var(--verde);
-  transform: scale(1.1);
-  background-color: var(--branco-cinza);
-}
 
 .pgamer {
   font-size: 2em;
@@ -514,10 +458,8 @@ input[type="text"] {
 .titulo-C {
 
   font-size: 25px;
-  /* Tamanho da fonte */
-  font-family: "Montserrat";
-  /* Família da fonte */
 
+  font-family: "Montserrat";
   max-width: 30vw;
   font-size: 1.75em;
   text-align: center;
@@ -543,10 +485,8 @@ input[type="text"] {
 .texto-sobre {
 
   font-size: 25px;
-  /* Tamanho da fonte */
-  font-family: "Montserrat";
-  /* Família da fonte */
 
+  font-family: "Montserrat";
   width: 15vw;
   font-size: 1.75em;
   text-align: center;
@@ -766,25 +706,18 @@ input[type="text"] {
 
 .segundo-texto {
   text-align: center;
-  /* Alinha o texto à esquerda */
   margin-top: 20px;
-  /* Espaço acima do parágrafo */
   margin-bottom: 20px;
-  /* Espaço abaixo do parágrafo */
   color: var(--branco-cinza);
-  /* Cor do texto */
   font-size: 25px;
-  /* Tamanho da fonte */
   font-family: "Montserrat";
-  /* Família da fonte */
+
 }
 
 .titulo-case {
 
   font-size: 25px;
-  /* Tamanho da fonte */
   font-family: "Montserrat";
-  /* Família da fonte */
   font-size: 1.75em;
   text-align: center;
   color: var(--branco-cinza);
@@ -888,14 +821,12 @@ ul {
   background-color: var(--preto);
 
   padding: 30px 0;
-  /* Remove o padding lateral específico */
   display: flex;
   justify-content: center;
-  /* Centraliza o conteúdo horizontalmente */
 
-  padding: 30px 0; 
+  padding: 30px 0;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 
 }
 
@@ -905,16 +836,15 @@ ul {
 
   align-items: center;
 }
+
 .row {
   display: flex;
 
   justify-content: center;
-  /* Centraliza as colunas horizontalmente */
   flex-wrap: wrap;
-  /* Permite que as colunas quebrem linha se necessário */
 
-  justify-content: center; 
-  flex-wrap: wrap; 
+  justify-content: center;
+  flex-wrap: wrap;
 
 }
 
@@ -924,9 +854,9 @@ ul {
   box-sizing: border-box;
 
   min-width: 200px;
-  /* Para garantir que as colunas não sejam muito pequenas */
 
-  min-width: 300px; 
+
+  min-width: 300px;
 
 }
 
@@ -940,8 +870,6 @@ ul {
   margin-bottom: 5%;
   position: relative;
 
-  /* Adicionado para posicionamento correto do ::before */
-
 }
 
 .footer-col h4::before {
@@ -949,9 +877,6 @@ ul {
   position: absolute;
 
   left: 50%;
-  /* Centraliza o pseudo-elemento horizontalmente */
-
-  left: 50%; 
 
   bottom: -10px;
   transform: translateX(-50%);
@@ -1115,16 +1040,10 @@ ul {
   background-color: #ff0000;
 }
 
-.menu-fechado {
-  display: none;
-}
-
-#icone-barras {
-  display: none;
-}
 
 
-@media  screen and (max-width: 1920px) {
+
+@media screen and (max-width: 1920px) {
 
   .conteudo {
     gap: 47px;
@@ -1153,51 +1072,63 @@ ul {
   }
 }
 
-  nav.menu {
-    height: 500px;
-    width: 350px;
-    padding: 0 30px;
-    flex-direction: column;
-    justify-content: space-around;
-
-    background-color: #000000da;
-
-    position: absolute;
-    top: 165px;
-    right: 0;
-  }
-
-  #botao-menu {
-    width: 50px;
-    background: none;
-    border: none;
-  }
-
-  #botao-menu svg {
-    fill: white;
-  }
-
 @media screen and (max-width: 1300px) {
   .fifa {
     width: 400px;
   }
+
   .carro {
     width: 300px;
   }
+
   .basquete {
     width: 300px;
   }
+
   .titulo-jogos {
     max-width: 40vw;
   }
-  .card-pai{
-    gap: 4%;   
+
+  .card-pai {
+    gap: 4%;
   }
+
   .card {
     width: 240px;
     height: 170px;
   }
+
   .pgamer {
     width: 34vw;
   }
+
+  .segundo-texto {
+    font-size: 17px;
+  }
+
+  nav.menu {
+    height: 440px;
+    width: 350px;
+    padding: 0 30px;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    background-color: #000000da;
+  
+    position: absolute;
+    top: 165px;
+    right: 0;
+  }
+  
+  #botao-menu {
+    width: 50px;
+    background: none;
+    border: none;
+    display: unset;
+  }
+  
+  #botao-menu svg {
+    fill: white;
+  }
+
 }
