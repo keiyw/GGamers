@@ -1187,10 +1187,27 @@ ul {
   margin: 10px -10px 10px 35px;
 }
 .segundo-texto {
-  max-width: 91%;
-  
+  max-width: 100%;
+  font-size: 88%;
 }
+.card {
+  width: 200px;
+  height: 140px;
 }
+.card__content { 
 
+  top: 42%;
+  left: 48%;
+  width: 96%;
+  padding: 13px;
+}
+.card__title  {
+  font-size: 97%;
+}
+.card__description {
+  margin: 6px 0 0;
+  font-size: 50%;
+}
+}
 
 
