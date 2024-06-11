@@ -1200,7 +1200,9 @@ ul {
   
 }
 
-@media screen and (max-width: 998px) {
+
+@media screen and (max-width: 900px) {
+
   .fifa {
     width: 300px;
   }
@@ -1210,16 +1212,7 @@ ul {
   .carro {
     width: 200px;
   }
-
-  .titulo-C {
-    max-width: 45vw;
-    font-size: 100%;
-    width: 45vw;
-    margin: auto auto auto 23%;
-    margin-top: 10%;
   
-  }
-
   .pgamer {
     font-size: 123%;
   }
@@ -1232,18 +1225,10 @@ ul {
   }
 
   .p-segundo {
-    font-size: 106%;}
+    font-size: 90%;}
 
     .footer-col ul li a {
       font-size: 88%;}
-}
-
-@media screen and (max-width: 900px) {
-
-  titulo-C {
-    width: 45vw;
-    max-width: 65vw;
-    font-size: 100%;
 }
 
 .titulo-jogos {
@@ -1260,7 +1245,7 @@ ul {
 
 .titulo-c {
   max-width: 45vw;
-  font-size: 100%;
+  font-size: 90%;
   width: 45vw;
   margin: auto auto auto 23%;
   margin-top: 10%;
@@ -1276,7 +1261,7 @@ ul {
 }
 
 .imagem-central {
-  width: 53vw;
+  width: 46vw;
 }
 
 .card-pai {
@@ -1293,4 +1278,4 @@ ul {
 
 
 
-}
+
