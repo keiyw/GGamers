@@ -1,393 +1,382 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GGamers</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <link rel="shortcut icon" href="img/Polygon 24.svg" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GGamers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/Polygon 24.svg" type="imagem/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./script.js" defer></script>
-</head>
-
-<body>
-  <header class="container-grid">
-    <img src="img/logo.svg" alt="Logo da empresa" />
-    
-        <path
-          d="M114 669.1c-2.5 0-4.9-0.6-7.1-1.9-4.6-2.6-7.4-7.5-7.4-12.7l0.7-79.3C59.8 568.1 29 532.2 29 489V206c0-48.2 38.5-87.4 85.8-87.4h441.5c47.3 0 85.8 39.2 85.8 87.4v283c0 48.2-38.5 87.4-85.8 87.4H269.2l-147.6 90.5c-2.4 1.4-5 2.2-7.6 2.2z m0.8-521.5C83.5 147.6 58 173.8 58 206v283c0 32.2 25.5 58.4 56.9 58.4 3.9 0 7.6 1.5 10.3 4.3 2.7 2.7 4.2 6.5 4.2 10.3l-0.6 66.5 128.8-79c2.3-1.4 4.9-2.1 7.6-2.1h291.3c31.4 0 56.9-26.2 56.9-58.4V206c0-32.2-25.5-58.4-56.9-58.4H114.8z"
-          fill="#154B8B" />
-        <path
-          d="M890.1 773.1l1.1 117.4-195.6-117.4H318.4c-51 0-92.4-41.4-92.4-92.4V322.1c0-51 41.4-92.4 92.4-92.4h571.7c51 0 92.4 41.4 92.4 92.4v358.7c0 50.9-41.3 92.3-92.4 92.3z"
-          fill="#FAFCFC" />
-        <path
-          d="M891.2 905c-2.6 0-5.2-0.7-7.5-2.1L691.6 787.6H318.4c-58.9 0-106.9-47.9-106.9-106.9V322.1c0-58.9 47.9-106.9 106.9-106.9h571.7c58.9 0 106.9 47.9 106.9 106.9v358.7c0 54-40.2 98.7-92.2 105.9l1 103.8c0 5.2-2.7 10.1-7.3 12.7-2.3 1.1-4.8 1.8-7.3 1.8zM318.4 244.2c-42.9 0-77.9 34.9-77.9 77.9v358.7c0 42.9 34.9 77.9 77.9 77.9h377.2c2.6 0 5.2 0.7 7.5 2.1l173.5 104.1-0.8-91.5c0-3.9 1.5-7.6 4.2-10.3 2.7-2.7 6.4-4.3 10.3-4.3 42.9 0 77.9-34.9 77.9-77.9V322.1c0-42.9-34.9-77.9-77.9-77.9H318.4z"
-          fill="#154B8B" />
-        <path d="M376 499.8a47.3 44.8 0 1 0 94.6 0 47.3 44.8 0 1 0-94.6 0Z" fill="#144884" />
-        <path d="M557 499.8a47.3 44.8 0 1 0 94.6 0 47.3 44.8 0 1 0-94.6 0Z" fill="#144884" />
-        <path d="M737.9 499.8a47.3 44.8 0 1 0 94.6 0 47.3 44.8 0 1 0-94.6 0Z" fill="#144884" />
-      </svg>
-    </a>
-    <nav  id="menu" class="menu">
-      <button class="btn-31">
-        <span class="text-container">
-          <a href="#jogos" class="text">Jogos</a>
-        </span>
-      </button>
-      <button class="btn-31">
-        <span class="text-container">
-          <a href="#sobre" class="text">Sobre</a>
-        </span>
-      </button>
-      <button class="btn-31">
-        <span class="text-container">
-          <a href="#cases" class="text">Cases</a>
-        </span>
-      </button>
-      <button class="btn-31">
-        <span class="text-container">
-          <a href="#contate-nos" class="text">Contate-nos</span>
-        </span>
-      </button>
-      <button class="btn-31">
-        <span class="text-container">
-          <a href="login.html" class="text">Login</a>
-        </span>
-      </button>  
-     
-    </nav>
-    <button onclick="abreFechaMenu()" id="botao-menu">
-      <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-      <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-  </button>
-  </header>
- 
-  <main class="conteudo">
-    <section class="centro">
-      <img class="imagem-central" alt="foto representando o mundo tecnologico" src="img/banner.svg" />
-      <div class="secao-gamer">
-        <p class="pgamer">
-          Deixe sua mente <span>explorar </span>um <span>novo</span> mundo
-        </p>
-        <p class="paragrafo">
-          Gamificação: a chave para o engajamento e resultados excepcionais.
-          Integre elementos de jogos em suas estratégias para aumentar a
-          produtividade e promover uma experiência do usuário envolvente.
-          Transforme desafios em oportunidades e alcance o sucesso com a
-          gamificação
-        </p>
-        <div class="botoes">
-          <button class="animated-button btn-blue">Eu quero!</button>
-          <button class="animated-button btn-white">Conhecer mais!</button>
-        </div>
-      </div>
-    </section>
-    <section class="centro2">
-      <img class="segunda-imagem" alt="pessoas com seus trofeus" src="img/s-imagem.svg" />
-      <div class="s-banner">
-        <p class="s-paragrafo">
-          Quer <span>transformar</span> sua jornada de aprendizado em uma
-          <span>aventura emocionante?</span>
-        </p>
-        <p class="p-segundo">
-          Em nossa plataforma de gamificação, transformamos o aprendizado em
-          uma emocionante jornada repleta de desafios, conquistas e
-          recompensas. Utilizamos elementos de jogos para tornar o estudo mais
-          envolvente e divertido, incentivando você a alcançar seus objetivos
-          de aprendizado de forma eficaz. Explore nossos recursos interativos,
-          participe de missões educativas e veja como aprender pode ser uma
-          aventura empolgante!
-        </p>
-      </div>
-    </section>
-    <section class="centro-J" id="jogos">
-      <p class="titulo-jogos">
-        Encontre os <span>favoritos do momento</span> e dê início à sua experiência 
-        <span>hoje mesmo!</span>
-      </p>
-      <div class="secao-jogos">
-        <div class="b-1 img1">
-          <img class="basquete" src="img/basquete.jpg" alt="imagem de um jogo de basquete" />
-        </div>
-        <div class="f-2 img2">
-          <img class="fifa" src="img/fifa.jpg" alt="imagem de um jogo de futebol" />
-        </div>
-        <div class="C-3 img3">
-          <img class="carro" src="img/corrida-carro.jpg" alt="imagem de um jogo de corrida" />
-        </div>
-      </div>
-    </section>
-    <section>
-      <p class="titulo-C" >
-        Descubra <span>diversão</span> para todos os gostos em nossa
-        <span>seção de jogos</span>
-      </p>
-      <section>
-        <div class="container">
-            <div class="carousel">
-                <input type="radio" name="slides" checked="checked" id="slide-1">
-                <input type="radio" name="slides" id="slide-2">
-                <input type="radio" name="slides" id="slide-3">
-                <input type="radio" name="slides" id="slide-4">
-                <input type="radio" name="slides" id="slide-5">
-                <input type="radio" name="slides" id="slide-6">
-                <ul class="carousel__slides">
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="assets/the-witcher-3.jpg" alt="" >
-                            </div>
-                            <figcaption style="color: #f4f4f9">
-                              The Witcher 3: Wild Hunt é um jogo de RPG aclamado pela crítica, onde os jogadores encarnam Geralt de Rivia, um caçador de monstros. Com uma narrativa envolvente, gráficos impressionantes e um vasto mundo a ser explorado, o jogo cativa os fãs de RPG e oferece uma experiência imersiva e emocionante.
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="assets/cs.png" alt="">
-                            </div>
-                            <figcaption style="color: #f4f4f9">
-                              Em Counter-Strike: Warzone, a ação não para. Entre em equipes de terroristas ou contra-terroristas, planeje táticas, e mergulhe em batalhas estratégicas em mapas realistas. Esteja preparado para a adrenalina constante.
-                             
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="assets/jogo-fps.jpg" alt="">
-                            </div>
-                            <figcaption style="color: #f4f4f9">
-                              Mergulhe em um mundo pós-apocalíptico repleto de zumbis sedentos por carne humana. Escolha seu arsenal, reúna sua equipe e embarque em batalhas intensas e estratégicas pela Península. Esteja pronto para a adrenalina constante, onde cada passo pode significar a diferença entre a vida e a morte.                         
-                              </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="assets/jogo-luta.jpg" alt="">
-                            </div>
-                            <figcaption style="color: #f4f4f9">
-                              Street Fighter V: Champion Edition" oferece uma intensa competição de luta, com uma variedade de personagens e estilos de luta únicos. Explore arenas detalhadas e desafie jogadores de todo o mundo em busca da supremacia no ringue.
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="assets/jogo.jpg" alt="">
-                            </div>
-                            <figcaption style="color: #f4f4f9">
-                              Viva a emoção do futebol mundial em FIFA, um jogo que te coloca no comando dos seus times e jogadores preferidos. Mostre suas habilidades em dribles, passes precisos e gols incríveis enquanto compete em cenários autênticos e desafiadores.
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="assets/Civilization-IV.jpeg" alt="">
-                            </div>
-                            <figcaption style="color: #f4f4f9">
-                              Civilization VI é um jogo estratégico que te coloca no controle de uma civilização desde os tempos antigos até a era moderna. Expanda seu império, tome decisões cruciais e lide com desafios globais para se tornar o líder supremo.
-                                <span class="credit">Photo: Annie Spratt</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-                <ul class="carousel__thumbnails">
-                    <li>
-                        <label for="slide-1"><img src="assets/the-witcher-3.jpg" alt="" ></label>
-                    </li>
-                    <li>
-                        <label for="slide-2"><img src="assets/cs.png" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-3"><img src="assets/jogo-fps.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-4"><img src="assets/jogo-luta.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-5"><img src="assets/jogo.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-6"><img src="assets/Civilization-IV.jpeg" alt=""></label>
-                    </li>
-                </ul>
+  </head>
+  <body>
+    <header>
+      <section class="menu-section">
+        <nav id="menu" class="menu">
+          <img class="logo" src="img/logo.svg" alt="Logo da empresa" />
+          <div class="menu-links">
+            <button class="btn-31">
+              <span class="text-container">
+                <a href="#jogos" class="text">Jogos</a>
+              </span>
+            </button>
+            <button class="btn-31">
+              <span class="text-container">
+                <a href="#sobre" class="text">Sobre</a>
+              </span>
+            </button>
+            <button class="btn-31">
+              <span class="text-container">
+                <a href="#cases" class="text">Cases</a>
+              </span>
+            </button>
+            <button class="btn-31">
+              <span class="text-container">
+                <a href="#contate-nos" class="text">Contate-nos</a>
+              </span>
+            </button>
+            <button class="btn-31">
+              <span class="text-container">
+                <a href="login.html" class="text">Login</a>
+              </span>
+            </button>
+          </div>
+        </nav>
+      </section>
+      <!-- <section class="image-section">
+            <div class="image-container">
+                <img class="imagem-central" alt="foto representando o mundo tecnologico" src="img/header.png" />
             </div>
-        </div>
-    </section>
-    </section>
-    <section style=" width: 100%; display: flex; flex-direction: row; margin-bottom: 55px;" id="sobre">
-      <div class="textos">
-        <p class="texto-sobre">
-          <span>Explore mais</span> sobre <span> nossa história e quem somos</span>
-        </p>
+        </section> -->
+    </header>
 
-        <div style="display: flex; justify-content: center; align-items: center; max-width: 75%; margin: 0 auto;">
-          <div class="content-images" style=" max-width: 50%;">
-           <img src="img/empresa.jpg" alt="" style="width: 82%;  border-radius: 10px; ">
-          </div> 
-          <div style="flex: 0 0 50%; max-width: 50%;">
-            <p class="segundo-texto"  style="text-align: justify;">
-              Nossa empresa é especializada em gamificação, aplicando elementos de jogos para envolver, motivar e criar
-              experiências envolventes. Somos líderes no mercado de gamificação, dedicando-nos a transformar a maneira
-              como as pessoas interagem com produtos e serviços. Nossa expertise está em utilizar técnicas e mecânicas de
-              jogos para criar ambientes mais dinâmicos e interativos, aumentando significativamente o engajamento e a
-              motivação dos usuários. Oferecemos soluções personalizadas para diversos setores, transformando interações,
-              treinamentos e engajamento do público. Desde o setor educacional, onde nossos métodos tornam o aprendizado
-              mais divertido e eficaz.
+    <main>
+      <section class="centro">
+        <div class="image-container">
+          <img
+            class="imagem-central"
+            alt="foto representando o mundo tecnologico"
+            src="img/header.png"
+          />
+          <div class="text-over-image">
+            <p class="pgamer">
+              Deixe sua mente <span>explorar </span>um <span>novo mundo</span>
+            </p>
+            <p class="paragrafo">
+              Gamificação: a chave para o engajamento e resultados excepcionais.
+              Integre elementos de jogos em suas estratégias para aumentar a
+              produtividade e promover uma experiência do usuário envolvente.
+              Transforme desafios em oportunidades e alcance o sucesso com a
+              gamificação
             </p>
           </div>
-          
         </div>
-      </div>
-    </section>
-  </main>
-  <section>
-    <p class="titulo-case">
-      Cases de <span>Sucesso</span></p>
+      </section>
+      <section class="centro2" id="sobre">
+      <img src="img/segunda imagem.svg" alt=" imagem de representação da empresa" style="border-radius: 5%; ">
+        <div class="s-banner">
+          <p class="s-paragrafo">
+            Descubra Mais Sobre Nossa História e Quem Somos!
+          </p>
+          <p class="p-segundo">
+            Nossa empresa é especializada em gamificação, aplicando elementos de
+            jogos para envolver, motivar e criar experiências envolventes.
+            Oferecemos soluções personalizadas para diversos setores,
+            transformando interações, treinamentos e engajamento do público.
+            Seja no design de jogos, plataformas interativas ou estratégias
+            gamificadas, buscamos proporcionar experiências únicas, unindo a
+            paixão pelos jogos com inovação em cada projeto.
+          </p>
+        </div>
+      </section>
+      
+      <section class="s-jogos" id="jogos">
+        <div class="container ">
+            <div class="carousel">
 
-    <div class="card-pai">
-      <div class="card" id="cases">
-        <img src="./img/biomove.svg" alt="">
-        <div class="card__content">
-          <p class="card__title">Biomove
-          </p>
-          <p class="card__description">Diminuir a emissão de carbono, resultando em em um planeta com menos impacto
-            ambiental, um futuro urbano onde a mobilidade é fluída.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./img/animall.svg" alt="">
-        <path
-          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
-        </path>
-        </svg>
-        <div class="card__content">
-          <p class="card__title">AniMall
-          </p>
-          <p class="card__description">Temos a missão de tornar a vida dos donos de animais mais fácil e enriquecer o
-            bem-estar dos pets.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./img/ecosoy.svg" alt="">
-        <path
-          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
-        </path>
-        </svg>
-        <div class="card__content">
-          <p class="card__title">EcoSoy
-          </p>
-          <p class="card__description">A empresa tem como objetivo promover a moda sustentável e desenvolver roupas de
-            alta qualidade de forma responsável e inovadora..</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/GaleSun - Original.svg" alt="">
-        <path
-          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
-        </path>
-        </svg>
-        <div class="card__content">
-          <p class="card__title">GaleSun
-          </p>
-          <p class="card__description">A missão da GaleSun é fornecer energia renovável de alta qualidade, por meio de
-            soluções inovadoras e sustentáveis, contribuindo para um mundo mais limpo e equilibrado. Buscamos ser um
-            agente de transformação no setor energético, promovendo o uso responsável dos recursos naturais e inspirando
-            outras empresas a seguirem o nosso exemplo."</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <footer>
-      <div class="card-1">
-        <div class="row">
-          <div class="footer-col" id="contate-nos">
-            <h4>Contatos</h4>
-            <ul class="example-2" style=" width: 100%; display: flex; flex-direction: row;">
-              <li class="icon-content">
-                <a href="https://linkedin.com/" aria-label="LinkedIn" data-social="linkedin">
-                  <div class="filled"></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-linkedin" viewBox="0 0 16 16" xml:space="preserve">
-                    <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                      fill="currentColor"></path>
-                  </svg>
-                </a>
-                <div class="tooltip">LinkedIn</div>
-              </li>
-              <li class="icon-content">
-                <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
-                  <div class="filled"></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16" xml:space="preserve">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                      fill="currentColor"></path>
-                  </svg>
-                </a>
-                <div class="tooltip">GitHub</div>
-              </li>
-              <li class="icon-content">
-                <a href="https://www.instagram.com/" aria-label="Instagram" data-social="instagram">
-                  <div class="filled"></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-instagram" viewBox="0 0 16 16" xml:space="preserve">
-                    <path
-                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                      fill="currentColor"></path>
-                  </svg>
-                </a>
-                <div class="tooltip">Instagram</div>
-              </li>
-              <li class="icon-content">
-                <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
-                  <div class="filled"></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-youtube" viewBox="0 0 16 16" xml:space="preserve">
-                    <path
-                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
-                      fill="currentColor"></path>
-                  </svg>
-                </a>
-                <div class="tooltip">Youtube</div>
-              </li>
-            </ul>
-
+        <p class="titulo-C" >
+            Conheça Nossos Títulos Mais Populares <br> e Inicie Sua Jornada Hoje Mesmo!</p></br>
+        
+         
+                  <input type="radio" name="slides" checked="checked" id="slide-1">
+                  <input type="radio" name="slides" id="slide-2">
+                  <input type="radio" name="slides" id="slide-3">
+                  <input type="radio" name="slides" id="slide-4">
+                  <input type="radio" name="slides" id="slide-5">
+                  <input type="radio" name="slides" id="slide-6">
+                  <ul class="carousel__slides">
+                      <li class="carousel__slide">
+                          <figure>
+                              <div>
+                                  <img src="assets/the-witcher-3.jpg" alt="" >
+                              </div>
+                              <figcaption style="color: #f4f4f9">
+                                The Witcher 3: Wild Hunt é um jogo de RPG aclamado pela crítica, onde os jogadores encarnam Geralt de Rivia, um caçador de monstros. Com uma narrativa envolvente, gráficos impressionantes e um vasto mundo a ser explorado, o jogo cativa os fãs de RPG e oferece uma experiência imersiva e emocionante.
+                              </figcaption>
+                          </figure>
+                      </li>
+                      <li class="carousel__slide">
+                          <figure>
+                              <div>
+                                  <img src="assets/cs.png" alt="">
+                              </div>
+                              <figcaption style="color: #f4f4f9">
+                                Em Counter-Strike: Warzone, a ação não para. Entre em equipes de terroristas ou contra-terroristas, planeje táticas, e mergulhe em batalhas estratégicas em mapas realistas. Esteja preparado para a adrenalina constante.
+                               
+                              </figcaption>
+                          </figure>
+                      </li>
+                      <li class="carousel__slide">
+                          <figure>
+                              <div>
+                                  <img src="assets/jogo-fps.jpg" alt="">
+                              </div>
+                              <figcaption style="color: #f4f4f9">
+                                Mergulhe em um mundo pós-apocalíptico repleto de zumbis sedentos por carne humana. Escolha seu arsenal, reúna sua equipe e embarque em batalhas intensas e estratégicas pela Península. Esteja pronto para a adrenalina constante, onde cada passo pode significar a diferença entre a vida e a morte.                         
+                                </figcaption>
+                          </figure>
+                      </li>
+                      <li class="carousel__slide">
+                          <figure>
+                              <div>
+                                  <img src="assets/jogo-luta.jpg" alt="">
+                              </div>
+                              <figcaption style="color: #f4f4f9">
+                                Street Fighter V: Champion Edition" oferece uma intensa competição de luta, com uma variedade de personagens e estilos de luta únicos. Explore arenas detalhadas e desafie jogadores de todo o mundo em busca da supremacia no ringue.
+                              </figcaption>
+                          </figure>
+                      </li>
+                      <li class="carousel__slide">
+                          <figure>
+                              <div>
+                                  <img src="assets/jogo.jpg" alt="">
+                              </div>
+                              <figcaption style="color: #f4f4f9">
+                                Viva a emoção do futebol mundial em FIFA, um jogo que te coloca no comando dos seus times e jogadores preferidos. Mostre suas habilidades em dribles, passes precisos e gols incríveis enquanto compete em cenários autênticos e desafiadores.
+                              </figcaption>
+                          </figure>
+                      </li>
+                      <li class="carousel__slide">
+                          <figure>
+                              <div>
+                                  <img src="assets/Civilization-IV.jpeg" alt="">
+                              </div>
+                              <figcaption style="color: #f4f4f9">
+                                Civilization VI é um jogo estratégico que te coloca no controle de uma civilização desde os tempos antigos até a era moderna. Expanda seu império, tome decisões cruciais e lide com desafios globais para se tornar o líder supremo.
+                                  
+                              </figcaption>
+                          </figure>
+                      </li>
+                  </ul>
+                  <ul class="carousel__thumbnails">
+                      <li>
+                          <label for="slide-1"><img src="assets/the-witcher-3.jpg" alt="" ></label>
+                      </li>
+                      <li>
+                          <label for="slide-2"><img src="assets/cs.png" alt=""></label>
+                      </li>
+                      <li>
+                          <label for="slide-3"><img src="assets/jogo-fps.jpg" alt=""></label>
+                      </li>
+                      <li>
+                          <label for="slide-4"><img src="assets/jogo-luta.jpg" alt=""></label>
+                      </li>
+                      <li>
+                          <label for="slide-5"><img src="assets/jogo.jpg" alt=""></label>
+                      </li>
+                      <li>
+                          <label for="slide-6"><img src="assets/Civilization-IV.jpeg" alt=""></label>
+                      </li>
+                  </ul>
+              </div>
           </div>
-          <div class="footer-col">
-            <h4>Explorar</h4>
-            <ul>
-              <li><a href="#">Sobre nós</a></li>
-              <li><a href="#">FAQ (Perguntas Frequentes)</a></li>
-              <li><a href="#">Termos e Condições</a></li>
-              <li><a href="#">Política de Privacidade</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Suporte</h4>
-            <ul>
-              <li><a href="#">Suporte ao cliente</a></li>
-              <li><a href="#">Chat ao vivo</a></li>
-              <li><a href="#">suporte@ggamers.com.br.</a></li>
-
-            </ul>
-          </div>
-
+      </section>
+      <section class="centro3">
+        <img class="terceira-imagem" alt="pessoas com seus trofeus" src="img/imagem-3.svg" style="border-radius: 5%; ">
+        <div class="ss-banner">
+          <p class="ss-paragrafo">
+            Faça da Sua Jornada de Aprendizado uma Grande Aventura!</p>
+          <p class="p-ssegundo">
+            Em nossa plataforma de gamificação, transformamos o aprendizado em
+            uma emocionante jornada repleta de desafios, conquistas e
+            recompensas. Utilizamos elementos de jogos para tornar o estudo mais
+            envolvente e divertido, incentivando você a alcançar seus objetivos
+            de aprendizado de forma eficaz. Explore nossos recursos interativos,
+            participe de missões educativas e veja como aprender pode ser uma
+            aventura empolgante!
+          </p>
         </div>
-      </div>
-      </div>
+      </section>
+    </main>
+    <section>
+        <p class="titulo-case">
+          Cases de <span>Sucesso</span></p>
+    
+        <div class="card-pai">
+          <div class="card" id="cases">
+            <img src="./img/biomove.svg" alt="">
+            <div class="card__content">
+              <p class="card__title">Biomove
+              </p>
+              <p class="card__description">Diminuir a emissão de carbono, resultando em em um planeta com menos impacto
+                ambiental, um futuro urbano onde a mobilidade é fluída.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/animall.svg" alt="">
+            <path
+              d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+            </path>
+            </svg>
+            <div class="card__content">
+              <p class="card__title">AniMall
+              </p>
+              <p class="card__description">Temos a missão de tornar a vida dos donos de animais mais fácil e enriquecer o
+                bem-estar dos pets.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/ecosoy.svg" alt="">
+            <path
+              d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+            </path>
+            </svg>
+            <div class="card__content">
+              <p class="card__title">EcoSoy
+              </p>
+              <p class="card__description">A empresa tem como objetivo promover a moda sustentável e desenvolver roupas de
+                alta qualidade de forma responsável e inovadora..</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/GaleSun - Original.svg" alt="">
+            <path
+              d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+            </path>
+            </svg>
+            <div class="card__content">
+              <p class="card__title">GaleSun
+              </p>
+              <p class="card__description">A missão da GaleSun é fornecer energia renovável de alta qualidade, por meio de
+                soluções inovadoras e sustentáveis, contribuindo para um mundo mais limpo e equilibrado. Buscamos ser um
+                agente de transformação no setor energético, promovendo o uso responsável dos recursos naturais e inspirando
+                outras empresas a seguirem o nosso exemplo."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="content">
+            <div class="link-boxes">
+                <div class="box">   
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Status De Pedido</a></li>
+                        <li><a href="#">ggamers.infoo@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                    <div class="box">
+                        <h4>Contatos</h4>
+                        <div class="buttons-container">
+                            <button class="button">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  height="24"
+                                  width="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  class="w-6 h-6 text-gray-800 dark:text-white"
+                                >
+                                  <path
+                                    clip-rule="evenodd"
+                                    d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                                    fill-rule="evenodd"
+                                    fill="currentColor"
+                                  ></path>
+                                </svg>
+                              </button>
+                              <button class="button">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  height="24"
+                                  width="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  class="w-6 h-6 text-gray-800 dark:text-white"
+                                >
+                                  <path
+                                    clip-rule="evenodd"
+                                    d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+                                    fill-rule="evenodd"
+                                    fill="currentColor"
+                                  ></path>
+                                  <path
+                                    d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"
+                                    fill="currentColor"
+                                  ></path>
+                                </svg>
+                              </button>
+                              
+                              
+                              
+                              <button class="button">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="currentColor"
+                                  height="24"
+                                  width="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  class="w-6 h-6 text-gray-800 dark:text-white"
+                                >
+                                  <path
+                                    clip-rule="evenodd"
+                                    d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                                    fill-rule="evenodd"
+                                  ></path>
+                                </svg>
+                              </button>
+                              <button class="button">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    height="24"
+                                    width="24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                    class="w-6 h-6 text-gray-800 dark:text-white"
+                                >
+                                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
+                                </svg>
+                            </button>
+                              
+                        </div>
+                    </div>
+                    
+                      
+                    
+                </div>
+            </div>
+        </div>
+       
     </footer>
-  </section>
-</body>
 
+  </body>
+</html>
